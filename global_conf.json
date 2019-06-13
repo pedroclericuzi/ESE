@@ -1,0 +1,35 @@
+{
+  "SX127x_conf":
+  {
+    "freq": 915000000,
+    "spread_factor": 7,
+    "pin_nss": 6,
+    "pin_dio0": 7,
+    "pin_rst": 0
+  },
+  "gateway_conf":
+  {
+    "ref_latitude": -7.99579319,
+    "ref_longitude": -34.84043181,
+    "ref_altitude": 1,
+
+    "name": "PVBC Gateway",
+    "email": "pedro.vinicius.batista@gmail.com",
+    "desc": "Projeto LoRa ESE",
+
+    "servers":
+    [
+      {
+        "address": "router.us.staging.thethings.network",
+        "port": 1700,
+        "enabled": true
+      },
+      {
+        "address": "router.us.thethings.network",
+        "port": 1700,
+        "enabled": false
+      }
+    ]
+  }
+}
+

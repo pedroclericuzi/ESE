@@ -3,9 +3,9 @@
   {
     "freq": 915000000,
     "spread_factor": 7,
-    "pin_nss": 6,
-    "pin_dio0": 7,
-    "pin_rst": 0
+    "pin_nss":24,
+    "pin_dio0": 18,
+    "pin_rst": 29
   },
   "gateway_conf":
   {

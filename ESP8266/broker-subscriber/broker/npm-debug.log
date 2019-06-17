@@ -1,0 +1,672 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'mosca',
+1 verbose cli   'pino',
+1 verbose cli   '-g' ]
+2 info using npm@1.4.21
+3 info using node@v4.8.2
+4 verbose cache add [ 'mosca', null ]
+5 verbose cache add name=undefined spec="mosca" args=["mosca",null]
+6 verbose parsed url Url {
+6 verbose parsed url   protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'mosca',
+6 verbose parsed url   path: 'mosca',
+6 verbose parsed url   href: 'mosca' }
+7 verbose cache add [ 'pino', null ]
+8 verbose cache add name=undefined spec="pino" args=["pino",null]
+9 verbose parsed url Url {
+9 verbose parsed url   protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'pino',
+9 verbose parsed url   path: 'pino',
+9 verbose parsed url   href: 'pino' }
+10 silly lockFile 4ae4981c-mosca mosca
+11 verbose lock mosca /home/pi/.npm/4ae4981c-mosca.lock
+12 silly lockFile beb13b0d-pino pino
+13 verbose lock pino /home/pi/.npm/beb13b0d-pino.lock
+14 silly lockFile 4ae4981c-mosca mosca
+15 silly lockFile 4ae4981c-mosca mosca
+16 silly lockFile beb13b0d-pino pino
+17 silly lockFile beb13b0d-pino pino
+18 verbose addNamed [ 'mosca', '' ]
+19 verbose addNamed [ null, '*' ]
+20 silly lockFile 9c693872-mosca mosca@
+21 verbose lock mosca@ /home/pi/.npm/9c693872-mosca.lock
+22 verbose addNamed [ 'pino', '' ]
+23 verbose addNamed [ null, '*' ]
+24 silly lockFile 6a31c88e-pino pino@
+25 verbose lock pino@ /home/pi/.npm/6a31c88e-pino.lock
+26 silly addNameRange { name: 'mosca', range: '*', hasData: false }
+27 silly addNameRange { name: 'pino', range: '*', hasData: false }
+28 verbose request where is /mosca
+29 verbose request registry https://registry.npmjs.org/
+30 verbose request id a61bb6b9ef21229a
+31 verbose url raw /mosca
+32 verbose url resolving [ 'https://registry.npmjs.org/', './mosca' ]
+33 verbose url resolved https://registry.npmjs.org/mosca
+34 verbose request where is https://registry.npmjs.org/mosca
+35 info trying registry request attempt 1 at 15:02:43
+36 verbose etag "5ac777c7-4662a"
+37 http GET https://registry.npmjs.org/mosca
+38 verbose request where is /pino
+39 verbose request registry https://registry.npmjs.org/
+40 verbose url raw /pino
+41 verbose url resolving [ 'https://registry.npmjs.org/', './pino' ]
+42 verbose url resolved https://registry.npmjs.org/pino
+43 verbose request where is https://registry.npmjs.org/pino
+44 info trying registry request attempt 1 at 15:02:43
+45 verbose etag "5ae789c0-507d1"
+46 http GET https://registry.npmjs.org/pino
+47 http 200 https://registry.npmjs.org/pino
+48 silly registry.get cb [ 200,
+48 silly registry.get   { date: 'Wed, 06 Jun 2018 17:02:45 GMT',
+48 silly registry.get     'content-type': 'application/json; charset=UTF-8',
+48 silly registry.get     'transfer-encoding': 'chunked',
+48 silly registry.get     connection: 'close',
+48 silly registry.get     'set-cookie': [ '__cfduid=d7588f0a9352b5ce47f733aae992511a61528304564; expires=Thu, 06-Jun-19 17:02:44 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+48 silly registry.get     'cache-control': 'max-age=300',
+48 silly registry.get     'cf-cache-status': 'REVALIDATED',
+48 silly registry.get     'cf-ray': '426c72c809964b15-GRU',
+48 silly registry.get     etag: 'W/"d048cc400f1e5d09e5a07999a07a9d60"',
+48 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+48 silly registry.get     'last-modified': 'Sat, 02 Jun 2018 12:46:29 GMT',
+48 silly registry.get     vary: 'accept-encoding, accept',
+48 silly registry.get     server: 'cloudflare',
+48 silly registry.get     'content-encoding': 'gzip' } ]
+49 silly addNameRange number 2 { name: 'pino', range: '*', hasData: true }
+50 silly addNameRange versions [ 'pino',
+50 silly addNameRange   [ '0.0.1',
+50 silly addNameRange     '0.1.0',
+50 silly addNameRange     '0.1.1',
+50 silly addNameRange     '0.1.2',
+50 silly addNameRange     '0.2.0',
+50 silly addNameRange     '0.2.1',
+50 silly addNameRange     '0.2.2',
+50 silly addNameRange     '0.2.3',
+50 silly addNameRange     '0.2.4',
+50 silly addNameRange     '0.2.5',
+50 silly addNameRange     '0.3.0',
+50 silly addNameRange     '0.3.1',
+50 silly addNameRange     '0.4.0',
+50 silly addNameRange     '0.4.1',
+50 silly addNameRange     '0.4.2',
+50 silly addNameRange     '1.0.0',
+50 silly addNameRange     '1.0.1',
+50 silly addNameRange     '1.0.2',
+50 silly addNameRange     '1.0.3',
+50 silly addNameRange     '1.0.4',
+50 silly addNameRange     '1.0.5',
+50 silly addNameRange     '1.1.0',
+50 silly addNameRange     '1.1.1',
+50 silly addNameRange     '2.0.0',
+50 silly addNameRange     '2.1.0',
+50 silly addNameRange     '2.1.1',
+50 silly addNameRange     '2.1.2',
+50 silly addNameRange     '2.1.3',
+50 silly addNameRange     '2.1.4',
+50 silly addNameRange     '2.1.5',
+50 silly addNameRange     '2.1.6',
+50 silly addNameRange     '2.1.7',
+50 silly addNameRange     '2.2.0',
+50 silly addNameRange     '2.2.1',
+50 silly addNameRange     '2.2.2',
+50 silly addNameRange     '2.2.3',
+50 silly addNameRange     '2.3.0',
+50 silly addNameRange     '2.4.0',
+50 silly addNameRange     '2.4.1',
+50 silly addNameRange     '2.4.2',
+50 silly addNameRange     '2.4.3',
+50 silly addNameRange     '2.4.4',
+50 silly addNameRange     '2.5.0',
+50 silly addNameRange     '2.6.0',
+50 silly addNameRange     '2.6.1',
+50 silly addNameRange     '2.7.0',
+50 silly addNameRange     '2.7.1',
+50 silly addNameRange     '2.7.2',
+50 silly addNameRange     '2.7.3',
+50 silly addNameRange     '2.7.4',
+50 silly addNameRange     '2.7.5',
+50 silly addNameRange     '2.8.0',
+50 silly addNameRange     '2.8.1',
+50 silly addNameRange     '2.8.2',
+50 silly addNameRange     '2.8.3',
+50 silly addNameRange     '2.9.0',
+50 silly addNameRange     '2.10.0',
+50 silly addNameRange     '2.10.1',
+50 silly addNameRange     '2.11.0',
+50 silly addNameRange     '2.12.0',
+50 silly addNameRange     '2.12.1',
+50 silly addNameRange     '2.12.2',
+50 silly addNameRange     '2.12.3',
+50 silly addNameRange     '2.12.4',
+50 silly addNameRange     '2.13.0',
+50 silly addNameRange     '2.13.2',
+50 silly addNameRange     '2.14.0',
+50 silly addNameRange     '2.15.0',
+50 silly addNameRange     '3.0.0',
+50 silly addNameRange     '3.0.1',
+50 silly addNameRange     '3.0.2',
+50 silly addNameRange     '3.0.3',
+50 silly addNameRange     '3.0.4',
+50 silly addNameRange     '3.0.5',
+50 silly addNameRange     '3.0.6',
+50 silly addNameRange     '3.0.7',
+50 silly addNameRange     '3.1.0',
+50 silly addNameRange     '2.16.0',
+50 silly addNameRange     '3.1.1',
+50 silly addNameRange     '3.1.2',
+50 silly addNameRange     '3.1.3',
+50 silly addNameRange     '3.2.0',
+50 silly addNameRange     '3.3.0',
+50 silly addNameRange     '3.3.1',
+50 silly addNameRange     '3.3.2',
+50 silly addNameRange     '3.4.0',
+50 silly addNameRange     '4.0.0',
+50 silly addNameRange     '4.0.1',
+50 silly addNameRange     '4.0.2',
+50 silly addNameRange     '4.0.3',
+50 silly addNameRange     '4.1.0',
+50 silly addNameRange     '4.1.1',
+50 silly addNameRange     '4.1.2',
+50 silly addNameRange     '4.2.0',
+50 silly addNameRange     '4.2.1',
+50 silly addNameRange     '4.2.2',
+50 silly addNameRange     '4.2.3',
+50 silly addNameRange     '4.2.4',
+50 silly addNameRange     '4.3.0',
+50 silly addNameRange     '4.4.0',
+50 silly addNameRange     '4.5.0',
+50 silly addNameRange     '4.5.1',
+50 silly addNameRange     '4.5.2',
+50 silly addNameRange     '4.5.3',
+50 silly addNameRange     '4.5.4',
+50 silly addNameRange     '4.6.0',
+50 silly addNameRange     '4.7.0',
+50 silly addNameRange     '4.7.1',
+50 silly addNameRange     '4.7.2',
+50 silly addNameRange     '4.7.3',
+50 silly addNameRange     '4.8.0',
+50 silly addNameRange     '4.8.1',
+50 silly addNameRange     '4.8.2',
+50 silly addNameRange     '4.9.0',
+50 silly addNameRange     '4.10.0',
+50 silly addNameRange     '4.10.1',
+50 silly addNameRange     '4.10.2',
+50 silly addNameRange     '4.10.3',
+50 silly addNameRange     '4.10.4',
+50 silly addNameRange     '4.11.0',
+50 silly addNameRange     '4.12.0',
+50 silly addNameRange     '4.13.0',
+50 silly addNameRange     '4.14.0',
+50 silly addNameRange     '4.15.0',
+50 silly addNameRange     '4.15.1',
+50 silly addNameRange     '4.15.2',
+50 silly addNameRange     '4.15.3',
+50 silly addNameRange     '4.15.4',
+50 silly addNameRange     '4.16.0',
+50 silly addNameRange     '4.16.1',
+50 silly addNameRange     '5.0.0-rc.1',
+50 silly addNameRange     '5.0.0-rc.2',
+50 silly addNameRange     '4.17.0',
+50 silly addNameRange     '4.17.1',
+50 silly addNameRange     '4.17.2',
+50 silly addNameRange     '4.17.3',
+50 silly addNameRange     '5.0.0-rc.3' ] ]
+51 verbose addNamed [ 'pino', '4.17.3' ]
+52 verbose addNamed [ '4.17.3', '4.17.3' ]
+53 silly lockFile d1ea10b2-pino-4-17-3 pino@4.17.3
+54 verbose lock pino@4.17.3 /home/pi/.npm/d1ea10b2-pino-4-17-3.lock
+55 silly lockFile b92938d7-y-npmjs-org-pino-pino-4-17-3-tgz https://registry.npmjs.org/pino/-/pino-4.17.3.tgz
+56 verbose lock https://registry.npmjs.org/pino/-/pino-4.17.3.tgz /home/pi/.npm/b92938d7-y-npmjs-org-pino-pino-4-17-3-tgz.lock
+57 verbose addRemoteTarball [ 'https://registry.npmjs.org/pino/-/pino-4.17.3.tgz',
+57 verbose addRemoteTarball   '3536ea36f6258356ba8891d18dbf1afed41fcf09' ]
+58 info retry fetch attempt 1 at 15:02:46
+59 verbose fetch to= /tmp/npm-27750-BOnRfG4A/registry.npmjs.org/pino/-/pino-4.17.3.tgz
+60 http GET https://registry.npmjs.org/pino/-/pino-4.17.3.tgz
+61 http 200 https://registry.npmjs.org/mosca
+62 silly registry.get cb [ 200,
+62 silly registry.get   { date: 'Wed, 06 Jun 2018 17:02:46 GMT',
+62 silly registry.get     'content-type': 'application/json; charset=UTF-8',
+62 silly registry.get     'transfer-encoding': 'chunked',
+62 silly registry.get     connection: 'close',
+62 silly registry.get     'set-cookie': [ '__cfduid=deb0dc09b6ae5721bad496c56974036f21528304564; expires=Thu, 06-Jun-19 17:02:44 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+62 silly registry.get     'content-encoding': 'gzip',
+62 silly registry.get     'accept-ranges': 'bytes',
+62 silly registry.get     age: '0',
+62 silly registry.get     'cache-control': 'max-age=300',
+62 silly registry.get     'cf-ray': '426c72c67a0a4afd-GRU',
+62 silly registry.get     etag: 'W/"5b12a7bb-4752a"',
+62 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+62 silly registry.get     'last-modified': 'Sat, 2 Jun 2018 14:20:43 GMT',
+62 silly registry.get     vary: 'accept-encoding, accept',
+62 silly registry.get     via: '1.1 varnish (Varnish/5.2)',
+62 silly registry.get     'x-varnish': '17283684',
+62 silly registry.get     server: 'cloudflare' } ]
+63 silly addNameRange number 2 { name: 'mosca', range: '*', hasData: true }
+64 silly addNameRange versions [ 'mosca',
+64 silly addNameRange   [ '0.0.1',
+64 silly addNameRange     '0.1.0',
+64 silly addNameRange     '0.1.1',
+64 silly addNameRange     '0.2.0',
+64 silly addNameRange     '0.3.0',
+64 silly addNameRange     '0.4.0',
+64 silly addNameRange     '0.4.1',
+64 silly addNameRange     '0.4.2',
+64 silly addNameRange     '0.4.3',
+64 silly addNameRange     '0.6.0',
+64 silly addNameRange     '0.7.0',
+64 silly addNameRange     '0.7.1',
+64 silly addNameRange     '0.7.2',
+64 silly addNameRange     '0.7.3',
+64 silly addNameRange     '0.8.0',
+64 silly addNameRange     '0.8.1',
+64 silly addNameRange     '0.8.2',
+64 silly addNameRange     '0.9.0',
+64 silly addNameRange     '0.9.1',
+64 silly addNameRange     '0.9.2',
+64 silly addNameRange     '0.9.3',
+64 silly addNameRange     '0.9.4',
+64 silly addNameRange     '0.9.5',
+64 silly addNameRange     '0.10.0',
+64 silly addNameRange     '0.11.0',
+64 silly addNameRange     '0.12.0',
+64 silly addNameRange     '0.12.1',
+64 silly addNameRange     '0.13.0',
+64 silly addNameRange     '0.13.1',
+64 silly addNameRange     '0.13.2',
+64 silly addNameRange     '0.13.3',
+64 silly addNameRange     '0.13.4',
+64 silly addNameRange     '0.14.0',
+64 silly addNameRange     '0.14.1',
+64 silly addNameRange     '0.14.2',
+64 silly addNameRange     '0.14.3',
+64 silly addNameRange     '0.14.4',
+64 silly addNameRange     '0.15.0',
+64 silly addNameRange     '0.16.0',
+64 silly addNameRange     '0.16.1',
+64 silly addNameRange     '0.17.0',
+64 silly addNameRange     '0.17.1',
+64 silly addNameRange     '0.17.2',
+64 silly addNameRange     '0.17.3',
+64 silly addNameRange     '0.17.4',
+64 silly addNameRange     '0.17.5',
+64 silly addNameRange     '0.17.6',
+64 silly addNameRange     '0.17.7',
+64 silly addNameRange     '0.18.0',
+64 silly addNameRange     '0.19.0',
+64 silly addNameRange     '0.19.1',
+64 silly addNameRange     '0.20.0',
+64 silly addNameRange     '0.20.1',
+64 silly addNameRange     '0.20.2',
+64 silly addNameRange     '0.20.3',
+64 silly addNameRange     '0.21.0',
+64 silly addNameRange     '0.21.1',
+64 silly addNameRange     '0.21.2',
+64 silly addNameRange     '0.21.3',
+64 silly addNameRange     '0.21.4',
+64 silly addNameRange     '0.21.5',
+64 silly addNameRange     '0.21.6',
+64 silly addNameRange     '0.21.7',
+64 silly addNameRange     '0.21.8',
+64 silly addNameRange     '0.21.9',
+64 silly addNameRange     '0.22.0',
+64 silly addNameRange     '0.23.0',
+64 silly addNameRange     '0.23.1',
+64 silly addNameRange     '0.23.2',
+64 silly addNameRange     '0.24.0',
+64 silly addNameRange     '0.24.1',
+64 silly addNameRange     '0.24.2',
+64 silly addNameRange     '0.25.0',
+64 silly addNameRange     '0.25.1',
+64 silly addNameRange     '0.26.0',
+64 silly addNameRange     '0.26.1',
+64 silly addNameRange     '0.26.2',
+64 silly addNameRange     '0.27.0',
+64 silly addNameRange     '0.27.1',
+64 silly addNameRange     '0.28.0',
+64 silly addNameRange     '0.28.1',
+64 silly addNameRange     '0.28.2',
+64 silly addNameRange     '0.29.0',
+64 silly addNameRange     '0.30.0',
+64 silly addNameRange     '0.30.1',
+64 silly addNameRange     '0.30.2',
+64 silly addNameRange     '0.30.3',
+64 silly addNameRange     '0.30.4',
+64 silly addNameRange     '0.30.5',
+64 silly addNameRange     '0.31.0',
+64 silly addNameRange     '0.31.1',
+64 silly addNameRange     '0.32.0',
+64 silly addNameRange     '0.32.1',
+64 silly addNameRange     '1.0.0-pre1',
+64 silly addNameRange     '1.0.0',
+64 silly addNameRange     '1.0.1',
+64 silly addNameRange     '1.0.2',
+64 silly addNameRange     '1.1.0',
+64 silly addNameRange     '1.1.1',
+64 silly addNameRange     '1.1.2',
+64 silly addNameRange     '1.1.3',
+64 silly addNameRange     '1.2.0',
+64 silly addNameRange     '1.3.0',
+64 silly addNameRange     '1.4.0',
+64 silly addNameRange     '1.4.1',
+64 silly addNameRange     '2.0.0',
+64 silly addNameRange     '2.0.1',
+64 silly addNameRange     '2.0.2',
+64 silly addNameRange     '2.1.0',
+64 silly addNameRange     '2.2.0',
+64 silly addNameRange     '2.3.0',
+64 silly addNameRange     '2.4.0',
+64 silly addNameRange     '2.5.0',
+64 silly addNameRange     '2.5.1',
+64 silly addNameRange     '2.5.2',
+64 silly addNameRange     '2.6.0',
+64 silly addNameRange     '2.7.0',
+64 silly addNameRange     '2.8.0',
+64 silly addNameRange     '2.8.1',
+64 silly addNameRange     '2.8.2' ] ]
+65 verbose addNamed [ 'mosca', '2.8.2' ]
+66 verbose addNamed [ '2.8.2', '2.8.2' ]
+67 silly lockFile e96090c2-mosca-2-8-2 mosca@2.8.2
+68 verbose lock mosca@2.8.2 /home/pi/.npm/e96090c2-mosca-2-8-2.lock
+69 silly lockFile 5892e5ff--npmjs-org-mosca-mosca-2-8-2-tgz https://registry.npmjs.org/mosca/-/mosca-2.8.2.tgz
+70 verbose lock https://registry.npmjs.org/mosca/-/mosca-2.8.2.tgz /home/pi/.npm/5892e5ff--npmjs-org-mosca-mosca-2-8-2-tgz.lock
+71 verbose addRemoteTarball [ 'https://registry.npmjs.org/mosca/-/mosca-2.8.2.tgz',
+71 verbose addRemoteTarball   'e6b0779e0bfda4aab2bcec26ddc526d325518dff' ]
+72 info retry fetch attempt 1 at 15:02:46
+73 verbose fetch to= /tmp/npm-27750-BOnRfG4A/registry.npmjs.org/mosca/-/mosca-2.8.2.tgz
+74 http GET https://registry.npmjs.org/mosca/-/mosca-2.8.2.tgz
+75 http 200 https://registry.npmjs.org/pino/-/pino-4.17.3.tgz
+76 http 200 https://registry.npmjs.org/mosca/-/mosca-2.8.2.tgz
+77 silly lockFile b92938d7-y-npmjs-org-pino-pino-4-17-3-tgz https://registry.npmjs.org/pino/-/pino-4.17.3.tgz
+78 silly lockFile b92938d7-y-npmjs-org-pino-pino-4-17-3-tgz https://registry.npmjs.org/pino/-/pino-4.17.3.tgz
+79 silly lockFile d1ea10b2-pino-4-17-3 pino@4.17.3
+80 silly lockFile d1ea10b2-pino-4-17-3 pino@4.17.3
+81 silly lockFile 6a31c88e-pino pino@
+82 silly lockFile 6a31c88e-pino pino@
+83 silly lockFile 5892e5ff--npmjs-org-mosca-mosca-2-8-2-tgz https://registry.npmjs.org/mosca/-/mosca-2.8.2.tgz
+84 silly lockFile 5892e5ff--npmjs-org-mosca-mosca-2-8-2-tgz https://registry.npmjs.org/mosca/-/mosca-2.8.2.tgz
+85 silly lockFile e96090c2-mosca-2-8-2 mosca@2.8.2
+86 silly lockFile e96090c2-mosca-2-8-2 mosca@2.8.2
+87 silly lockFile 9c693872-mosca mosca@
+88 silly lockFile 9c693872-mosca mosca@
+89 silly resolved [ { name: 'pino',
+89 silly resolved     version: '4.17.3',
+89 silly resolved     description: 'super fast, all natural json logger',
+89 silly resolved     main: 'pino.js',
+89 silly resolved     browser: './browser.js',
+89 silly resolved     bin: { pino: './bin.js' },
+89 silly resolved     files:
+89 silly resolved      [ 'pino.js',
+89 silly resolved        'bin.js',
+89 silly resolved        'browser.js',
+89 silly resolved        'pretty.js',
+89 silly resolved        'usage.txt',
+89 silly resolved        'test',
+89 silly resolved        'docs',
+89 silly resolved        'example.js',
+89 silly resolved        'lib' ],
+89 silly resolved     scripts:
+89 silly resolved      { 'browser-test': 'airtap --local 8080 test/browser*test.js',
+89 silly resolved        test: 'standard | snazzy && NODE_OPTIONS=\'--no-warnings\' tap --no-cov test/*test.js',
+89 silly resolved        ci: 'standard | snazzy &&  NODE_OPTIONS=\'--no-warnings\' tap --cov test/*test.js',
+89 silly resolved        'bench-all': 'node benchmarks/runbench all',
+89 silly resolved        'bench-basic': 'node benchmarks/runbench basic',
+89 silly resolved        'bench-object': 'node benchmarks/runbench object',
+89 silly resolved        'bench-deepobject': 'node benchmarks/runbench deepobject',
+89 silly resolved        'bench-multiarg': 'node benchmarks/runbench multiarg',
+89 silly resolved        'bench-longstring': 'node benchmarks/runbench longstring',
+89 silly resolved        'bench-child': 'node benchmarks/runbench child',
+89 silly resolved        'bench-grandchild': 'node benchmarks/runbench grandchild',
+89 silly resolved        'bench-conception': 'node benchmarks/runbench conception' },
+89 silly resolved     precommit: 'test',
+89 silly resolved     repository: { type: 'git', url: 'git+https://github.com/pinojs/pino.git' },
+89 silly resolved     keywords: [ 'fast', 'logger', 'stream', 'json' ],
+89 silly resolved     author: { name: 'Matteo Collina', email: 'hello@matteocollina.com' },
+89 silly resolved     contributors: [ [Object], [Object], [Object] ],
+89 silly resolved     license: 'MIT',
+89 silly resolved     bugs: { url: 'https://github.com/pinojs/pino/issues' },
+89 silly resolved     homepage: 'http://getpino.io',
+89 silly resolved     devDependencies:
+89 silly resolved      { airtap: '0.0.7',
+89 silly resolved        benchmark: '^2.1.4',
+89 silly resolved        bole: '^3.0.2',
+89 silly resolved        bunyan: '^1.8.12',
+89 silly resolved        debug: '^3.1.0',
+89 silly resolved        fastbench: '^1.0.1',
+89 silly resolved        'flush-write-stream': '^1.0.3',
+89 silly resolved        'fresh-require': '^1.0.3',
+89 silly resolved        log: '^1.4.0',
+89 silly resolved        loglevel: '^1.6.1',
+89 silly resolved        'pre-commit': '^1.2.2',
+89 silly resolved        proxyquire: '^2.0.1',
+89 silly resolved        snazzy: '^7.1.1',
+89 silly resolved        standard: '^11.0.1',
+89 silly resolved        steed: '^1.1.3',
+89 silly resolved        tap: '^11.1.5',
+89 silly resolved        tape: '^4.9.0',
+89 silly resolved        through2: '^2.0.3',
+89 silly resolved        winston: '^3.0.0-rc5' },
+89 silly resolved     dependencies:
+89 silly resolved      { chalk: '^2.4.1',
+89 silly resolved        'fast-json-parse': '^1.0.3',
+89 silly resolved        'fast-safe-stringify': '^1.2.3',
+89 silly resolved        flatstr: '^1.0.5',
+89 silly resolved        'pino-std-serializers': '^2.0.0',
+89 silly resolved        pump: '^3.0.0',
+89 silly resolved        'quick-format-unescaped': '^1.1.2',
+89 silly resolved        split2: '^2.2.0' },
+89 silly resolved     gitHead: '36d4d265e7d04bd871fc08f21d399b3066e83fb6',
+89 silly resolved     _id: 'pino@4.17.3',
+89 silly resolved     _npmVersion: '5.6.0',
+89 silly resolved     _nodeVersion: '8.11.2',
+89 silly resolved     _npmUser:
+89 silly resolved      { name: 'davidmarkclements',
+89 silly resolved        email: 'huperekchuno@googlemail.com' },
+89 silly resolved     dist:
+89 silly resolved      { integrity: 'sha512-3CBWMG1k6QdOyz9br3WzOhUQD52QFskbmlgX51wGXLPAY0UbKPsUIayYcVOQMCqjmeqEPCAG3V/Uvry+FjwtoQ==',
+89 silly resolved        shasum: '3536ea36f6258356ba8891d18dbf1afed41fcf09',
+89 silly resolved        tarball: 'https://registry.npmjs.org/pino/-/pino-4.17.3.tgz',
+89 silly resolved        fileCount: 48,
+89 silly resolved        unpackedSize: 198328,
+89 silly resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbEo3cCRA9TVsSAnZWagAAZ1gQAIcWAo5D1TvDc7M4XLrA\nHk2i8HrvyYqTmdaP93iPq+zFIuKQpcRHTnKDq/Tm4oUYD9itObkKy40zp6mT\nLYQlFa3atQYAXkCNJ3EO0g/BjUqQusdiTpdUAftd8rWt0JLeE6Y1BHO38GHH\nZYXlaeRH66nhzUQzU/Q8l8sOTO2jAkh/86rJ7fRLK/oEXdY1u7pBVsy1L5S2\nViX0mQ2anb/I7m8ArBAvTtWBsoJAFg0XSZZeZpzv84SjSWCypGbQwIH+sPbe\nz3AlH9Qs4MeXPbdzrtsik1t24+Wrjizg7HJPnffU9b/rUMv9FLfLJ9q2Fa+2\n9ViVx+4mbp5mAAftldUKYoT31GkuAgz61gFNerHNc38Xp2JZXZwOVDiBWDO1\n16uH+Q4stnbJ3ottH7dzjsrhRWLigZ6QrcdUb0B/08OY8iJW6mrNKA3HR4yh\nMypRr0pzmmSjkjsIo9hD4PUyBv26f2SbnyVu+C4eqkef5rwlEbzc4kyuUW37\nGaYW/tdAz8JmTaFO5E8MVV5XeDzMahX2+mFykuSKWQNVdQ16xqxuyM2MIgf0\ncE5WB0OZmwgNgLwkuv+lGLtdaF6/b0vbSZqZJ3P6acmpa/lVBzG4Dp5Y/8qo\nhjPeRyxD3L2UHlaniVfuKO+GupJ5stpl5GVTOKsNDQkUk1/SAQgDNoSM/DgV\n6vKr\r\n=2FGW\r\n-----END PGP SIGNATURE-----\r\n' },
+89 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+89 silly resolved     directories: {},
+89 silly resolved     _npmOperationalInternal:
+89 silly resolved      { host: 's3://npm-registry-packages',
+89 silly resolved        tmp: 'tmp/pino_4.17.3_1527942617936_0.8654441532874926' },
+89 silly resolved     _shasum: '3536ea36f6258356ba8891d18dbf1afed41fcf09',
+89 silly resolved     _from: 'pino@',
+89 silly resolved     _resolved: 'https://registry.npmjs.org/pino/-/pino-4.17.3.tgz' },
+89 silly resolved   { name: 'mosca',
+89 silly resolved     version: '2.8.2',
+89 silly resolved     description: 'MQTT broker as a module',
+89 silly resolved     main: 'index.js',
+89 silly resolved     bin: { mosca: './bin/mosca' },
+89 silly resolved     scripts:
+89 silly resolved      { test: 'mocha --recursive --bail --reporter spec test 2>&1',
+89 silly resolved        ci: 'mocha --recursive --bail --watch test',
+89 silly resolved        coverage: 'rm -rf coverage; istanbul cover _mocha -- --recursive --reporter spec --bail',
+89 silly resolved        'publish-coverage': '(cat coverage/lcov.info | coveralls)',
+89 silly resolved        'jshint-lib': 'jshint lib',
+89 silly resolved        'jshint-test': 'jshint test',
+89 silly resolved        start: './bin/mosca -v | bunyan',
+89 silly resolved        bundle: 'browserify -r mqtt -s mqtt | uglifyjs --screw-ie8 > public/mqtt.js',
+89 silly resolved        prepublish: 'npm run bundle' },
+89 silly resolved     'pre-commit': [ 'jshint-lib', 'jshint-test', 'test' ],
+89 silly resolved     repository:
+89 silly resolved      { type: 'git',
+89 silly resolved        url: 'git+https://github.com/mcollina/mosca.git' },
+89 silly resolved     bugs: { url: 'http://github.com/mcollina/mosca/issues' },
+89 silly resolved     engines: { node: '>= 0.12' },
+89 silly resolved     keywords:
+89 silly resolved      [ 'mqtt',
+89 silly resolved        'mqtt server',
+89 silly resolved        'publish',
+89 silly resolved        'subscribe',
+89 silly resolved        'pubsub',
+89 silly resolved        'rabbitmq',
+89 silly resolved        'zeromq',
+89 silly resolved        '0mq',
+89 silly resolved        'amqp',
+89 silly resolved        'mosquitto',
+89 silly resolved        'websocket' ],
+89 silly resolved     author: { name: 'Matteo Collina', email: 'hello@matteocollina.com' },
+89 silly resolved     license: 'MIT',
+89 silly resolved     devDependencies:
+89 silly resolved      { browserify: '~13.0.0',
+89 silly resolved        chai: '^3.5.0',
+89 silly resolved        coveralls: '~2.11.1',
+89 silly resolved        'dox-foundation': '~0.5.4',
+89 silly resolved        istanbul: '~0.4.0',
+89 silly resolved        jshint: '~2.9.1',
+89 silly resolved        mocha: '^2.0.1',
+89 silly resolved        'mongo-clean': '^1.1.0',
+89 silly resolved        osenv: '^0.1.0',
+89 silly resolved        'pre-commit': '1.1.2',
+89 silly resolved        rimraf: '^2.2.8',
+89 silly resolved        sinon: '~1.7.0',
+89 silly resolved        'sinon-chai': '~2.8.0',
+89 silly resolved        supertest: '~1.2.0',
+89 silly resolved        tmp: '0.0.24',
+89 silly resolved        'uglify-js': '^2.8.28',
+89 silly resolved        underscore: '^1.7.0',
+89 silly resolved        ws: '^1.0.1' },
+89 silly resolved     dependencies:
+89 silly resolved      { 'array-from': '^2.1.1',
+89 silly resolved        ascoltatori: '^3.0.0',
+89 silly resolved        brfs: '~1.4.2',
+89 silly resolved        clone: '^1.0.2',
+89 silly resolved        commander: '~2.9.0',
+89 silly resolved        deepcopy: '^0.6.1',
+89 silly resolved        'escape-string-regexp': '^1.0.5',
+89 silly resolved        extend: '^3.0.0',
+89 silly resolved        'json-buffer': '~2.0.11',
+89 silly resolved        jsonschema: '^1.0.3',
+89 silly resolved        'level-sublevel': '^6.5.2',
+89 silly resolved        levelup: '^1.3.8',
+89 silly resolved        'lru-cache': '~4.0.0',
+89 silly resolved        memdown: '~1.1.1',
+89 silly resolved        minimatch: '~3.0.0',
+89 silly resolved        'moving-average': '0.1.1',
+89 silly resolved        mqtt: '^1.6.3',
+89 silly resolved        'mqtt-connection': '^2.1.1',
+89 silly resolved        msgpack5: '^3.3.0',
+89 silly resolved        nanoid: '^0.2.2',
+89 silly resolved        'pbkdf2-password': '^1.1.0',
+89 silly resolved        pino: '^2.4.2',
+89 silly resolved        qlobber: '~0.7.0',
+89 silly resolved        retimer: '^1.0.1',
+89 silly resolved        st: '^1.1.0',
+89 silly resolved        steed: '^1.0.0',
+89 silly resolved        uuid: '^2.0.1',
+89 silly resolved        'websocket-stream': '~3.1.0',
+89 silly resolved        leveldown: '~1.4.3',
+89 silly resolved        amqp: '~0.2.4',
+89 silly resolved        ioredis: '^1.15.1',
+89 silly resolved        mongodb: '~2.1.4' },
+89 silly resolved     optionalDependencies:
+89 silly resolved      { leveldown: '~1.4.3',
+89 silly resolved        amqp: '~0.2.4',
+89 silly resolved        ioredis: '^1.15.1',
+89 silly resolved        mongodb: '~2.1.4' },
+89 silly resolved     gitHead: '9686ce8bd72e882905c0149ae5a7ff875bfaabb3',
+89 silly resolved     homepage: 'https://github.com/mcollina/mosca#readme',
+89 silly resolved     _id: 'mosca@2.8.2',
+89 silly resolved     _npmVersion: '5.10.0',
+89 silly resolved     _nodeVersion: '8.11.2',
+89 silly resolved     _npmUser: { name: 'matteo.collina', email: 'hello@matteocollina.com' },
+89 silly resolved     dist:
+89 silly resolved      { integrity: 'sha512-v3URqgh2SFpPozy6tce2az9XeaUrx2Gh5809db5I6esa0LFhxosSLhPC+LwU1Ha70ylfk2iyU4wZuJl1cAzOpQ==',
+89 silly resolved        shasum: 'e6b0779e0bfda4aab2bcec26ddc526d325518dff',
+89 silly resolved        tarball: 'https://registry.npmjs.org/mosca/-/mosca-2.8.2.tgz',
+89 silly resolved        fileCount: 82,
+89 silly resolved        unpackedSize: 612070,
+89 silly resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbEqe5CRA9TVsSAnZWagAAVesP/0CrUt+ZWI4KnIvlJk+q\n80If6SqUFRzjQK2fdJekD+NVohi2HtSdUKzyDG9wKXtv8dLyZXWsO/A+brcM\nWl3uQLcVZCFCQjCAZ902tO4AeubE8jnk0MILQxFNmeA1v7+/op7aVMRLtaFF\nHQqAZhNcklh7WyfqNPmBQtNbrzdjA1nOv0rh6Nf8JI1gBhJLWE2ABp7mJrmo\nKmME+YNEXF05LS9atxLO5FlKBWISKdix1j9H+dKSvJs8EAUFaKYvFinrOouE\nHbev58c75dOgI9PrGyo7Luvp1ARMD1Jnb9h/dXx8pIoSUwe2jqvN9oPVoyOK\noWWV9Oib+JR0uYp65enHLOZzhVBfQYV37NZfo8miql922QjsWrk+gEe7DUhL\nmnGx1CDsEri9FO2QwVTtpBrClosz/gaA6e9onoE0fN/ME+aoO6I1Z9KBhJsb\no9pZeJLwx2K9BsAr+lZqfGkEYB47lQdT7ds4OPZ5HkZEA+VKxEaYCllNKezu\n0dlj1Kt6Mx8zWDhJ7DHKBw+wC3aYmWg5VsN5RxfHUv4+ABEe0G4Q50MWJRkr\nmzNj/JLWubR4tQWmslkM2dUzRHMCc5KLLt/l4L6mBsU4WWQPErfT9UPCD+L6\nb89UvWNFoiof/0H37fkNOWS/65lXUSR55izK7exyFla9IptSzC1xB0IMsdfh\nJmOk\r\n=T8e6\r\n-----END PGP SIGNATURE-----\r\n' },
+89 silly resolved     maintainers: [ [Object] ],
+89 silly resolved     directories: {},
+89 silly resolved     _npmOperationalInternal:
+89 silly resolved      { host: 's3://npm-registry-packages',
+89 silly resolved        tmp: 'tmp/mosca_2.8.2_1527949238835_0.4557431055566925' },
+89 silly resolved     _shasum: 'e6b0779e0bfda4aab2bcec26ddc526d325518dff',
+89 silly resolved     _from: 'mosca@',
+89 silly resolved     _resolved: 'https://registry.npmjs.org/mosca/-/mosca-2.8.2.tgz' } ]
+90 info install pino@4.17.3 into /usr/local/lib
+91 info install mosca@2.8.2 into /usr/local/lib
+92 info installOne pino@4.17.3
+93 info installOne mosca@2.8.2
+94 verbose lib/node_modules/pino unbuild
+95 verbose lib/node_modules/mosca unbuild
+96 verbose tar unpack /home/pi/.npm/pino/4.17.3/package.tgz
+97 silly lockFile d69a0ac2--usr-local-lib-node-modules-pino tar:///usr/local/lib/node_modules/pino
+98 verbose lock tar:///usr/local/lib/node_modules/pino /home/pi/.npm/d69a0ac2--usr-local-lib-node-modules-pino.lock
+99 silly lockFile 896dcc5c-e-pi-npm-pino-4-17-3-package-tgz tar:///home/pi/.npm/pino/4.17.3/package.tgz
+100 verbose lock tar:///home/pi/.npm/pino/4.17.3/package.tgz /home/pi/.npm/896dcc5c-e-pi-npm-pino-4-17-3-package-tgz.lock
+101 verbose tar unpack /home/pi/.npm/mosca/2.8.2/package.tgz
+102 silly lockFile c8e3e106-usr-local-lib-node-modules-mosca tar:///usr/local/lib/node_modules/mosca
+103 verbose lock tar:///usr/local/lib/node_modules/mosca /home/pi/.npm/c8e3e106-usr-local-lib-node-modules-mosca.lock
+104 silly lockFile 1f4d01ee-e-pi-npm-mosca-2-8-2-package-tgz tar:///home/pi/.npm/mosca/2.8.2/package.tgz
+105 verbose lock tar:///home/pi/.npm/mosca/2.8.2/package.tgz /home/pi/.npm/1f4d01ee-e-pi-npm-mosca-2-8-2-package-tgz.lock
+106 silly gunzTarPerm modes [ '755', '644' ]
+107 silly gunzTarPerm modes [ '755', '644' ]
+108 error tar.unpack untar error /home/pi/.npm/pino/4.17.3/package.tgz
+109 silly lockFile d69a0ac2--usr-local-lib-node-modules-pino tar:///usr/local/lib/node_modules/pino
+110 silly lockFile d69a0ac2--usr-local-lib-node-modules-pino tar:///usr/local/lib/node_modules/pino
+111 error tar.unpack untar error /home/pi/.npm/mosca/2.8.2/package.tgz
+112 silly lockFile c8e3e106-usr-local-lib-node-modules-mosca tar:///usr/local/lib/node_modules/mosca
+113 silly lockFile c8e3e106-usr-local-lib-node-modules-mosca tar:///usr/local/lib/node_modules/mosca
+114 silly lockFile 896dcc5c-e-pi-npm-pino-4-17-3-package-tgz tar:///home/pi/.npm/pino/4.17.3/package.tgz
+115 silly lockFile 896dcc5c-e-pi-npm-pino-4-17-3-package-tgz tar:///home/pi/.npm/pino/4.17.3/package.tgz
+116 silly lockFile 1f4d01ee-e-pi-npm-mosca-2-8-2-package-tgz tar:///home/pi/.npm/mosca/2.8.2/package.tgz
+117 silly lockFile 1f4d01ee-e-pi-npm-mosca-2-8-2-package-tgz tar:///home/pi/.npm/mosca/2.8.2/package.tgz
+118 verbose lib/node_modules/pino unbuild
+119 verbose lib/node_modules/mosca unbuild
+120 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules'
+120 error     at Error (native)
+120 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules']
+120 error   errno: -13,
+120 error   code: 'EACCES',
+120 error   syscall: 'mkdir',
+120 error   path: '/usr/local/lib/node_modules',
+120 error   fstream_type: 'Directory',
+120 error   fstream_path: '/usr/local/lib/node_modules/pino',
+120 error   fstream_class: 'DirWriter',
+120 error   fstream_stack:
+120 error    [ '/usr/lib/nodejs/fstream/lib/writer.js:171:25',
+120 error      '/usr/lib/nodejs/mkdirp/index.js:46:53',
+120 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+121 error Please try running this command again as root/Administrator.
+122 error System Linux 4.14.34-v7+
+123 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "mosca" "pino" "-g"
+124 error cwd /home/pi/Documents/TCC/RxMonitor/broker-subscriber/broker
+125 error node -v v4.8.2
+126 error npm -v 1.4.21
+127 error path /usr/local/lib/node_modules
+128 error syscall mkdir
+129 error fstream_path /usr/local/lib/node_modules/pino
+130 error fstream_type Directory
+131 error fstream_class DirWriter
+132 error code EACCES
+133 error errno -13
+134 error stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules'
+134 error stack     at Error (native)
+135 error fstream_stack /usr/lib/nodejs/fstream/lib/writer.js:171:25
+135 error fstream_stack /usr/lib/nodejs/mkdirp/index.js:46:53
+135 error fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+136 verbose exit [ -13, true ]

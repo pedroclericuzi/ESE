@@ -1,0 +1,1305 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'firebase' ]
+2 info using npm@1.4.21
+3 info using node@v4.8.2
+4 verbose config Skipping project config: /home/pi/.npmrc. (matches userconfig)
+5 verbose cache add [ 'firebase', null ]
+6 verbose cache add name=undefined spec="firebase" args=["firebase",null]
+7 verbose parsed url Url {
+7 verbose parsed url   protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'firebase',
+7 verbose parsed url   path: 'firebase',
+7 verbose parsed url   href: 'firebase' }
+8 silly lockFile 92f5e8df-firebase firebase
+9 verbose lock firebase /home/pi/.npm/92f5e8df-firebase.lock
+10 silly lockFile 92f5e8df-firebase firebase
+11 silly lockFile 92f5e8df-firebase firebase
+12 verbose addNamed [ 'firebase', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 2bddc103-firebase firebase@
+15 verbose lock firebase@ /home/pi/.npm/2bddc103-firebase.lock
+16 silly addNameRange { name: 'firebase', range: '*', hasData: false }
+17 verbose request where is /firebase
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id f9287c1ff53dba85
+20 verbose url raw /firebase
+21 verbose url resolving [ 'https://registry.npmjs.org/', './firebase' ]
+22 verbose url resolved https://registry.npmjs.org/firebase
+23 verbose request where is https://registry.npmjs.org/firebase
+24 info trying registry request attempt 1 at 15:26:59
+25 verbose etag W/"421b7a216495404f97d9cfb169469fef"
+26 http GET https://registry.npmjs.org/firebase
+27 http 304 https://registry.npmjs.org/firebase
+28 silly registry.get cb [ 304,
+28 silly registry.get   { date: 'Wed, 06 Jun 2018 17:27:00 GMT',
+28 silly registry.get     connection: 'close',
+28 silly registry.get     'set-cookie': [ '__cfduid=d42b72bfef2cda2e52b3fc57d1c89d3f01528306020; expires=Thu, 06-Jun-19 17:27:00 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+28 silly registry.get     'cache-control': 'max-age=300',
+28 silly registry.get     'cf-cache-status': 'HIT',
+28 silly registry.get     'cf-ray': '426c9651081f4bab-GRU',
+28 silly registry.get     etag: '"421b7a216495404f97d9cfb169469fef"',
+28 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+28 silly registry.get     'last-modified': 'Tue, 05 Jun 2018 20:11:14 GMT',
+28 silly registry.get     vary: 'accept-encoding, accept',
+28 silly registry.get     server: 'cloudflare' } ]
+29 verbose etag https://registry.npmjs.org/firebase from cache
+30 silly addNameRange number 2 { name: 'firebase', range: '*', hasData: true }
+31 silly addNameRange versions [ 'firebase',
+31 silly addNameRange   [ '0.0.0',
+31 silly addNameRange     '0.5.0',
+31 silly addNameRange     '0.5.1',
+31 silly addNameRange     '0.5.2',
+31 silly addNameRange     '0.5.3',
+31 silly addNameRange     '0.5.4',
+31 silly addNameRange     '0.6.0',
+31 silly addNameRange     '0.6.1',
+31 silly addNameRange     '0.6.2',
+31 silly addNameRange     '0.6.3',
+31 silly addNameRange     '0.6.4',
+31 silly addNameRange     '0.6.5',
+31 silly addNameRange     '0.6.6',
+31 silly addNameRange     '0.6.7',
+31 silly addNameRange     '0.6.8',
+31 silly addNameRange     '0.6.9',
+31 silly addNameRange     '0.6.10',
+31 silly addNameRange     '0.6.11',
+31 silly addNameRange     '0.6.14',
+31 silly addNameRange     '0.6.15',
+31 silly addNameRange     '0.6.16',
+31 silly addNameRange     '0.6.17',
+31 silly addNameRange     '0.6.19',
+31 silly addNameRange     '0.6.21',
+31 silly addNameRange     '0.6.22',
+31 silly addNameRange     '1.0.1',
+31 silly addNameRange     '1.0.1-npm',
+31 silly addNameRange     '1.0.2',
+31 silly addNameRange     '1.0.3',
+31 silly addNameRange     '1.0.4',
+31 silly addNameRange     '1.0.5',
+31 silly addNameRange     '1.0.10',
+31 silly addNameRange     '1.0.10-2',
+31 silly addNameRange     '1.0.11',
+31 silly addNameRange     '1.0.12',
+31 silly addNameRange     '1.0.13',
+31 silly addNameRange     '1.0.14',
+31 silly addNameRange     '1.0.15',
+31 silly addNameRange     '1.0.15-2',
+31 silly addNameRange     '1.0.15-3',
+31 silly addNameRange     '1.0.17',
+31 silly addNameRange     '1.0.18',
+31 silly addNameRange     '1.0.19',
+31 silly addNameRange     '1.0.20',
+31 silly addNameRange     '1.0.21',
+31 silly addNameRange     '1.0.23',
+31 silly addNameRange     '1.0.24',
+31 silly addNameRange     '1.1.0',
+31 silly addNameRange     '1.1.1',
+31 silly addNameRange     '1.1.2',
+31 silly addNameRange     '1.2.0-beta.1-0',
+31 silly addNameRange     '1.2.0-beta.2',
+31 silly addNameRange     '1.1.3',
+31 silly addNameRange     '1.2.0-beta.3',
+31 silly addNameRange     '2.0.0',
+31 silly addNameRange     '2.0.1',
+31 silly addNameRange     '2.0.2',
+31 silly addNameRange     '2.0.3',
+31 silly addNameRange     '2.0.4',
+31 silly addNameRange     '2.0.5',
+31 silly addNameRange     '2.0.6',
+31 silly addNameRange     '2.1.0',
+31 silly addNameRange     '2.1.1',
+31 silly addNameRange     '2.1.2',
+31 silly addNameRange     '1.2.0',
+31 silly addNameRange     '2.2.0',
+31 silly addNameRange     '2.2.1',
+31 silly addNameRange     '2.2.2',
+31 silly addNameRange     '2.2.3',
+31 silly addNameRange     '2.2.4',
+31 silly addNameRange     '2.2.5',
+31 silly addNameRange     '2.2.6',
+31 silly addNameRange     '2.2.7',
+31 silly addNameRange     '2.2.8',
+31 silly addNameRange     '2.2.9',
+31 silly addNameRange     '2.3.0',
+31 silly addNameRange     '2.3.1',
+31 silly addNameRange     '2.3.2',
+31 silly addNameRange     '2.4.0',
+31 silly addNameRange     '2.4.1',
+31 silly addNameRange     '2.4.2',
+31 silly addNameRange     '3.0.0',
+31 silly addNameRange     '3.0.1',
+31 silly addNameRange     '3.0.2',
+31 silly addNameRange     '3.0.3',
+31 silly addNameRange     '3.0.4',
+31 silly addNameRange     '3.0.5',
+31 silly addNameRange     '3.1.0',
+31 silly addNameRange     '3.2.0',
+31 silly addNameRange     '3.2.1',
+31 silly addNameRange     '3.3.0',
+31 silly addNameRange     '3.3.1',
+31 silly addNameRange     '3.3.2',
+31 silly addNameRange     '3.4.0',
+31 silly addNameRange     '3.4.1',
+31 silly addNameRange     '3.5.0',
+31 silly addNameRange     '3.5.1',
+31 silly addNameRange     '3.5.2',
+31 silly addNameRange     '3.5.3',
+31 silly addNameRange     '3.6.0',
+31 silly addNameRange     '3.6.1',
+31 silly addNameRange     '3.6.2',
+31 silly addNameRange     '3.6.3',
+31 silly addNameRange     '3.6.4',
+31 silly addNameRange     '3.6.5',
+31 silly addNameRange     '3.6.6',
+31 silly addNameRange     '3.6.7',
+31 silly addNameRange     '3.6.8',
+31 silly addNameRange     '3.6.9',
+31 silly addNameRange     '3.6.10',
+31 silly addNameRange     '3.7.0',
+31 silly addNameRange     '3.7.1',
+31 silly addNameRange     '3.7.2',
+31 silly addNameRange     '3.7.3',
+31 silly addNameRange     '3.7.4',
+31 silly addNameRange     '3.7.5',
+31 silly addNameRange     '3.7.6',
+31 silly addNameRange     '3.7.7',
+31 silly addNameRange     '3.7.8',
+31 silly addNameRange     '3.8.0',
+31 silly addNameRange     '3.9.0',
+31 silly addNameRange     '4.0.0',
+31 silly addNameRange     '4.1.0',
+31 silly addNameRange     '4.1.1',
+31 silly addNameRange     '4.1.2',
+31 silly addNameRange     '4.1.3',
+31 silly addNameRange     '4.1.4',
+31 silly addNameRange     '4.1.5',
+31 silly addNameRange     '4.2.0',
+31 silly addNameRange     '4.3.0',
+31 silly addNameRange     '4.3.1',
+31 silly addNameRange     '4.4.0',
+31 silly addNameRange     '4.5.0',
+31 silly addNameRange     '4.5.1',
+31 silly addNameRange     '4.5.2',
+31 silly addNameRange     '4.6.0',
+31 silly addNameRange     '4.6.1',
+31 silly addNameRange     '4.6.2',
+31 silly addNameRange     '4.7.0',
+31 silly addNameRange     '4.8.0',
+31 silly addNameRange     '4.8.1',
+31 silly addNameRange     '4.8.2-0',
+31 silly addNameRange     '4.8.2',
+31 silly addNameRange     '4.9.0-1',
+31 silly addNameRange     '4.9.0-2',
+31 silly addNameRange     '4.9.0',
+31 silly addNameRange     '4.9.0-canary.c647fe4',
+31 silly addNameRange     '4.9.0-canary.81d6b1e',
+31 silly addNameRange     '4.9.0-canary.fca1076',
+31 silly addNameRange     '4.9.0-canary.fcc77c2',
+31 silly addNameRange     '4.9.1-0',
+31 silly addNameRange     '4.9.0-canary.bcc8983',
+31 silly addNameRange     '4.9.0-canary.8f76c28',
+31 silly addNameRange     '4.9.0-canary.9fb3c4c',
+31 silly addNameRange     '4.9.1',
+31 silly addNameRange     '4.9.1-canary.631e1ad',
+31 silly addNameRange     '4.9.1-canary.49dcb25',
+31 silly addNameRange     '4.9.1-canary.2db58a0',
+31 silly addNameRange     '4.9.1-canary.a1e346f',
+31 silly addNameRange     '4.9.1-canary.453677f',
+31 silly addNameRange     '4.9.1-canary.7a611b6',
+31 silly addNameRange     '4.9.1-canary.fce4168',
+31 silly addNameRange     '4.9.1-canary.515eff7',
+31 silly addNameRange     '4.9.1-canary.f173ad0',
+31 silly addNameRange     '4.9.1-canary.2cacc75',
+31 silly addNameRange     '4.10.0-0',
+31 silly addNameRange     '4.9.1-canary.db389db',
+31 silly addNameRange     '4.10.0',
+31 silly addNameRange     '4.10.0-canary.2e147ff',
+31 silly addNameRange     '4.10.0-canary.b6b4e2f',
+31 silly addNameRange     '4.10.1-0',
+31 silly addNameRange     '4.10.0-canary.dbe5fff',
+31 silly addNameRange     '4.10.0-canary.e784110',
+31 silly addNameRange     '4.10.0-canary.3aec5ac',
+31 silly addNameRange     '4.10.1-1',
+31 silly addNameRange     '4.10.0-canary.3ee5bdf',
+31 silly addNameRange     '4.10.0-canary.0226ed2',
+31 silly addNameRange     '4.10.1-2',
+31 silly addNameRange     '4.10.0-canary.cde4e44',
+31 silly addNameRange     '4.10.1',
+31 silly addNameRange     '4.10.1-canary.9cda9c9',
+31 silly addNameRange     '4.10.1-canary.3d6289d',
+31 silly addNameRange     '4.10.1-canary.fbb2aab',
+31 silly addNameRange     '4.10.1-canary.dbed689',
+31 silly addNameRange     '4.10.1-canary.aba869c',
+31 silly addNameRange     '4.10.1-canary.0fa319e',
+31 silly addNameRange     '4.10.1-canary.a0583f7',
+31 silly addNameRange     '4.10.1-canary.03d224f',
+31 silly addNameRange     '4.11.0-0',
+31 silly addNameRange     '4.10.1-canary.121c167',
+31 silly addNameRange     '4.10.1-canary.7681d03',
+31 silly addNameRange     '4.11.0',
+31 silly addNameRange     '4.11.0-canary.6aed77a',
+31 silly addNameRange     '4.11.0-canary.69c9a97',
+31 silly addNameRange     '4.11.0-canary.786082d',
+31 silly addNameRange     '4.11.0-canary.0c5cbe0',
+31 silly addNameRange     '4.11.0-canary.bf7a221',
+31 silly addNameRange     '4.11.0-canary.b949d81',
+31 silly addNameRange     '4.11.0-canary.1b3ba41',
+31 silly addNameRange     '4.11.0-canary.df183a5',
+31 silly addNameRange     '4.12.0-0',
+31 silly addNameRange     '4.11.0-canary.d3ec2e0',
+31 silly addNameRange     '4.11.0-canary.9d00c6f',
+31 silly addNameRange     '4.11.0-canary.c25e7a1',
+31 silly addNameRange     '4.11.0-canary.908227c',
+31 silly addNameRange     '4.11.0-canary.d59b7249',
+31 silly addNameRange     '4.11.0-canary.d59b724',
+31 silly addNameRange     '4.12.0',
+31 silly addNameRange     '4.12.0-canary.563e048',
+31 silly addNameRange     '4.12.0-canary.84896ec',
+31 silly addNameRange     '4.12.0-canary.ab0faeb',
+31 silly addNameRange     '4.12.0-canary.8a10e7c',
+31 silly addNameRange     '4.12.0-canary.bb93e47',
+31 silly addNameRange     '4.12.0-canary.d90beab',
+31 silly addNameRange     '4.12.0-canary.faa54d8',
+31 silly addNameRange     '4.12.1-0',
+31 silly addNameRange     '4.12.0-canary.a538b83',
+31 silly addNameRange     '4.12.0-canary.dd86fc7',
+31 silly addNameRange     '4.12.1-1',
+31 silly addNameRange     '4.12.0-canary.3259004',
+31 silly addNameRange     '4.12.0-canary.ac4dac3',
+31 silly addNameRange     '4.12.0-canary.babd759',
+31 silly addNameRange     '4.12.0-canary.b146780',
+31 silly addNameRange     '4.12.1',
+31 silly addNameRange     '4.12.1-canary.541fbbe',
+31 silly addNameRange     '4.12.1-canary.b5aa5b8',
+31 silly addNameRange     '4.12.1-canary.1608edb',
+31 silly addNameRange     '4.12.1-canary.92f3809',
+31 silly addNameRange     '4.12.1-canary.790c158',
+31 silly addNameRange     '4.12.1-canary.4f28096',
+31 silly addNameRange     '4.12.1-canary.2a0a33f',
+31 silly addNameRange     '4.13.0-0',
+31 silly addNameRange     '4.12.1-canary.073cc19',
+31 silly addNameRange     '4.12.1-canary.8c54f6a',
+31 silly addNameRange     '4.12.1-canary.a1020bf',
+31 silly addNameRange     '4.12.1-canary.7857c21',
+31 silly addNameRange     '4.12.1-canary.12e839d',
+31 silly addNameRange     '4.12.1-canary.b45baec',
+31 silly addNameRange     '4.12.1-canary.9eace31',
+31 silly addNameRange     '4.12.1-canary.1f985cf',
+31 silly addNameRange     '4.12.1-canary.5e71095',
+31 silly addNameRange     '4.12.1-canary.6754b7f',
+31 silly addNameRange     '4.12.1-canary.fce6f7a',
+31 silly addNameRange     '4.12.1-canary.5475383',
+31 silly addNameRange     '4.12.1-canary.f95425f',
+31 silly addNameRange     '4.12.1-canary.1e3254d',
+31 silly addNameRange     '4.12.1-canary.fe0d694',
+31 silly addNameRange     '4.12.1-canary.4907285',
+31 silly addNameRange     '4.13.0-1',
+31 silly addNameRange     '4.13.0-2',
+31 silly addNameRange     '4.12.1-canary.452a4be',
+31 silly addNameRange     '4.12.1-canary.eeab13f',
+31 silly addNameRange     '4.13.0-3',
+31 silly addNameRange     '4.12.1-canary.14c2c4a',
+31 silly addNameRange     '4.12.1-canary.3fe3d2c',
+31 silly addNameRange     '4.12.1-canary.ca57c4d',
+31 silly addNameRange     '4.12.1-canary.d0a614c',
+31 silly addNameRange     '4.12.1-canary.7463443',
+31 silly addNameRange     '4.12.1-canary.3327845',
+31 silly addNameRange     '4.12.1-canary.078f83a',
+31 silly addNameRange     '4.12.1-canary.00659ca',
+31 silly addNameRange     '4.13.0-4',
+31 silly addNameRange     '4.12.1-canary.aaee15d',
+31 silly addNameRange     '4.12.1-canary.27a77fd',
+31 silly addNameRange     '4.12.1-canary.8b29658',
+31 silly addNameRange     '4.12.1-canary.231110c',
+31 silly addNameRange     '4.12.1-canary.05e05b8',
+31 silly addNameRange     '4.12.1-canary.eaec0b8',
+31 silly addNameRange     '4.12.1-canary.92aea91',
+31 silly addNameRange     '4.12.1-canary.4560599',
+31 silly addNameRange     '4.13.0-5',
+31 silly addNameRange     '4.13.0-6',
+31 silly addNameRange     '4.13.0-7',
+31 silly addNameRange     '4.12.1-canary.ffcaf85',
+31 silly addNameRange     '4.12.1-canary.fcb277a',
+31 silly addNameRange     '4.13.0',
+31 silly addNameRange     '4.12.1-canary.6991857',
+31 silly addNameRange     '4.13.0-canary.fd99689',
+31 silly addNameRange     '4.13.1',
+31 silly addNameRange     '4.13.1-canary.bfa8a5e',
+31 silly addNameRange     '4.13.1-canary.2471497',
+31 silly addNameRange     '4.13.1-canary.0e141c0',
+31 silly addNameRange     '4.13.1-canary.b60ffff',
+31 silly addNameRange     '4.13.1-canary.4b4eebc',
+31 silly addNameRange     '4.13.1-canary.8d1f1bf',
+31 silly addNameRange     '4.13.1-canary.b28c74f',
+31 silly addNameRange     '4.13.1-canary.8251c17',
+31 silly addNameRange     '4.13.1-canary.5f3716d',
+31 silly addNameRange     '4.13.1-canary.9751e46',
+31 silly addNameRange     '4.13.1-canary.66980bd',
+31 silly addNameRange     '4.13.1-canary.7edf649',
+31 silly addNameRange     '5.0.0-0',
+31 silly addNameRange     '4.13.1-canary.2de84e5',
+31 silly addNameRange     '4.13.1-canary.533e576',
+31 silly addNameRange     '4.13.1-canary.de6750b',
+31 silly addNameRange     '4.13.1-canary.099688f',
+31 silly addNameRange     '4.13.1-canary.4ffc979',
+31 silly addNameRange     '5.0.0-1',
+31 silly addNameRange     '4.13.1-canary.fa5d157',
+31 silly addNameRange     '4.13.1-canary.f096ba0',
+31 silly addNameRange     '4.13.1-canary.dfd09bc',
+31 silly addNameRange     '4.13.1-canary.7764746',
+31 silly addNameRange     '5.0.0-2',
+31 silly addNameRange     '4.13.1-canary.7f4ae1f',
+31 silly addNameRange     '4.13.1-canary.a413ec2',
+31 silly addNameRange     '4.13.1-canary.e441ffb',
+31 silly addNameRange     '4.13.1-canary.238fabe',
+31 silly addNameRange     '4.13.1-canary.403c123',
+31 silly addNameRange     '5.0.0-3',
+31 silly addNameRange     '4.13.1-canary.84686ba',
+31 silly addNameRange     '4.13.1-canary.21f83a6',
+31 silly addNameRange     '5.0.0',
+31 silly addNameRange     '5.0.1',
+31 silly addNameRange     '5.0.0-canary.b351749',
+31 silly addNameRange     '5.0.0-canary.785cc8b',
+31 silly addNameRange     '5.0.1-canary.8922c3a',
+31 silly addNameRange     '5.0.1-canary.e91742d',
+31 silly addNameRange     '5.0.1-canary.9fd0229',
+31 silly addNameRange     '5.0.1-canary.3110d6b',
+31 silly addNameRange     '5.0.1-canary.dd69371',
+31 silly addNameRange     '5.0.1-canary.44de46d',
+31 silly addNameRange     '5.0.1-canary.e04cfb1',
+31 silly addNameRange     '5.0.2-0',
+31 silly addNameRange     '5.0.1-canary.97a3727',
+31 silly addNameRange     '5.0.2',
+31 silly addNameRange     '5.0.1-canary.bd01dfe',
+31 silly addNameRange     '5.0.2-canary.c150044',
+31 silly addNameRange     '5.0.2-canary.4ff990a',
+31 silly addNameRange     '5.0.2-canary.6a95a7a',
+31 silly addNameRange     '5.0.2-canary.dd11cd1',
+31 silly addNameRange     '5.0.3-0',
+31 silly addNameRange     '5.0.2-canary.611949d',
+31 silly addNameRange     '5.0.2-canary.1c5258c',
+31 silly addNameRange     '5.0.2-canary.fbd5bd6',
+31 silly addNameRange     '5.0.2-canary.7e7d36e',
+31 silly addNameRange     '5.0.2-canary.5b59d75',
+31 silly addNameRange     '5.0.2-canary.2e5aa28',
+31 silly addNameRange     '5.0.2-canary.c660c35',
+31 silly addNameRange     '5.0.3',
+31 silly addNameRange     '5.0.3-canary.3fa62ef',
+31 silly addNameRange     '5.0.3-canary.f6fd8f5',
+31 silly addNameRange     '5.0.3-canary.e9caf33',
+31 silly addNameRange     '5.0.3-canary.d068bc5',
+31 silly addNameRange     '5.0.3-canary.9556469',
+31 silly addNameRange     '5.0.3-canary.2622286',
+31 silly addNameRange     '5.0.3-canary.b658d8c',
+31 silly addNameRange     '5.0.4-0',
+31 silly addNameRange     '5.0.3-canary.47625d7',
+31 silly addNameRange     '5.0.3-canary.916c692',
+31 silly addNameRange     '5.0.3-canary.4d16f51',
+31 silly addNameRange     '5.0.3-canary.b10c057',
+31 silly addNameRange     '5.0.4',
+31 silly addNameRange     '5.0.4-canary.a08cfe6',
+31 silly addNameRange     '5.0.4-canary.96a1092',
+31 silly addNameRange     '5.0.4-canary.2f7375a',
+31 silly addNameRange     '5.0.4-canary.3e806ca',
+31 silly addNameRange     '5.0.4-canary.233161d',
+31 silly addNameRange     '5.0.4-canary.236d4d0',
+31 silly addNameRange     '5.0.4-canary.23c576e',
+31 silly addNameRange     '5.0.4-canary.4673f7d',
+31 silly addNameRange     '5.0.4-canary.5e82b60',
+31 silly addNameRange     '5.0.4-canary.9534831' ] ]
+32 verbose addNamed [ 'firebase', '5.0.4' ]
+33 verbose addNamed [ '5.0.4', '5.0.4' ]
+34 silly lockFile 2cf32b2e-firebase-5-0-4 firebase@5.0.4
+35 verbose lock firebase@5.0.4 /home/pi/.npm/2cf32b2e-firebase-5-0-4.lock
+36 silly lockFile 2cf32b2e-firebase-5-0-4 firebase@5.0.4
+37 silly lockFile 2cf32b2e-firebase-5-0-4 firebase@5.0.4
+38 silly lockFile 2bddc103-firebase firebase@
+39 silly lockFile 2bddc103-firebase firebase@
+40 silly resolved [ { name: 'firebase',
+40 silly resolved     version: '5.0.4',
+40 silly resolved     description: 'Firebase JavaScript library for web and Node.js',
+40 silly resolved     author:
+40 silly resolved      { name: 'Firebase',
+40 silly resolved        email: 'firebase-support@google.com',
+40 silly resolved        url: 'https://firebase.google.com/' },
+40 silly resolved     license: 'Apache-2.0',
+40 silly resolved     homepage: 'https://firebase.google.com/',
+40 silly resolved     keywords:
+40 silly resolved      [ 'authentication',
+40 silly resolved        'database',
+40 silly resolved        'Firebase',
+40 silly resolved        'firebase',
+40 silly resolved        'realtime',
+40 silly resolved        'storage' ],
+40 silly resolved     repository:
+40 silly resolved      { type: 'git',
+40 silly resolved        url: 'git+https://github.com/firebase/firebase-js-sdk.git' },
+40 silly resolved     scripts:
+40 silly resolved      { build: 'rollup -c',
+40 silly resolved        dev: 'rollup -c -w',
+40 silly resolved        prepare: 'npm run build' },
+40 silly resolved     main: 'dist/index.node.cjs.js',
+40 silly resolved     browser: 'dist/index.cjs.js',
+40 silly resolved     module: 'dist/index.esm.js',
+40 silly resolved     'react-native': 'dist/index.rn.cjs.js',
+40 silly resolved     dependencies:
+40 silly resolved      { '@firebase/app': '0.3.3',
+40 silly resolved        '@firebase/auth': '0.5.3',
+40 silly resolved        '@firebase/database': '0.3.3',
+40 silly resolved        '@firebase/firestore': '0.5.4',
+40 silly resolved        '@firebase/functions': '0.2.4',
+40 silly resolved        '@firebase/messaging': '0.3.4',
+40 silly resolved        '@firebase/polyfill': '0.3.3',
+40 silly resolved        '@firebase/storage': '0.2.3' },
+40 silly resolved     devDependencies:
+40 silly resolved      { rollup: '0.57.1',
+40 silly resolved        'rollup-plugin-commonjs': '9.1.0',
+40 silly resolved        'rollup-plugin-node-resolve': '3.3.0',
+40 silly resolved        'rollup-plugin-typescript2': '0.12.0',
+40 silly resolved        'rollup-plugin-uglify': '3.0.0',
+40 silly resolved        typescript: '2.8.1' },
+40 silly resolved     typings: 'dist/index.d.ts',
+40 silly resolved     bugs: { url: 'https://github.com/firebase/firebase-js-sdk/issues' },
+40 silly resolved     _id: 'firebase@5.0.4',
+40 silly resolved     _npmVersion: '5.6.0',
+40 silly resolved     _nodeVersion: '8.11.1',
+40 silly resolved     _npmUser: { name: 'jshcrowthe', email: 'jshcrowthe@gmail.com' },
+40 silly resolved     dist:
+40 silly resolved      { integrity: 'sha512-UIlUOcISw6uiAwbsj/bamDDKJtdjx9GU2m9XgPF58DSA8IJaIbfdL6jT5C03R5mL+mMpXoKDAOeOq+ynf+R09w==',
+40 silly resolved        shasum: 'f367c80531c1a8a4ef82b6537b2a6bd92685e226',
+40 silly resolved        tarball: 'https://registry.npmjs.org/firebase/-/firebase-5.0.4.tgz',
+40 silly resolved        fileCount: 91,
+40 silly resolved        unpackedSize: 5116689,
+40 silly resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbB0NzCRA9TVsSAnZWagAAqrgQAKI/KTiyPfOxlMGIDGFI\nFutmDni1/rR9ylkEV3iIJxLzsfRsQwsH0S41hfdEQsrHECUddrkifdzj7Bar\nIYoyuV0Ul2cB5U5hUcKXAx6JPKeLjNanVH8wkSAxY+g0j0BRhxhoVyclD7Qd\njTSyR5qNa33AeVFulD4YObiY6DTwAE6E5mJahFSFzxpkRDYyCqQ+KJuQMp/s\n/gcoGgrHPHCa3Kt9/ICEQfy+2UUU5QL8fpl+bccInK+DdyYIv+K9vRzjVx2C\no4TGdX6rMk5FtnqAaynTp/lt6uetW4tvbYXEAaxqS91HTFahCsZgwSnjS8+Q\nc3LbDt3eE1jGAtgabxmydMmNS0h74rIuVaNrdSXuJDcyE7m363ByfK9hQ6XU\na1gN7FmQc+j+4YLxEYSRFWrq6fR46rsEdQVL6KMB3Erl1lSvSswVG1GIQzFO\nvGqQP0qVY6sWbbVqKJoDP6mzkso+70V8Qv+7fNH2nYF3bLm9EBxuJhVLC8Ne\nm3o43IHQqckVeu7xMIbfudnkUp15RIBfuR0urZ1BZx5fV59zs0VYhUpHeyuJ\n2Wh/sANN7+dakhMcYIevjW7cloOUKDyblrJYQtgzVOedRNAOdACMS7zvfgSC\nZ5a+q1+A4LDJ3SQeYEevP7A4H300CaRMnQP6xroW+LN33G+jgT9QPFnmysmS\nwTVe\r\n=/pwy\r\n-----END PGP SIGNATURE-----\r\n' },
+40 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+40 silly resolved     directories: {},
+40 silly resolved     _npmOperationalInternal:
+40 silly resolved      { host: 's3://npm-registry-packages',
+40 silly resolved        tmp: 'tmp/firebase_5.0.4_1527202674946_0.43392782980725264' },
+40 silly resolved     _shasum: 'f367c80531c1a8a4ef82b6537b2a6bd92685e226',
+40 silly resolved     _from: 'firebase@',
+40 silly resolved     _resolved: 'https://registry.npmjs.org/firebase/-/firebase-5.0.4.tgz',
+40 silly resolved     readme: 'ERROR: No README data found!' } ]
+41 info install firebase@5.0.4 into /home/pi
+42 info installOne firebase@5.0.4
+43 verbose node_modules/firebase unbuild
+44 verbose tar unpack /home/pi/.npm/firebase/5.0.4/package.tgz
+45 silly lockFile e81380df-ar-home-pi-node-modules-firebase tar:///home/pi/node_modules/firebase
+46 verbose lock tar:///home/pi/node_modules/firebase /home/pi/.npm/e81380df-ar-home-pi-node-modules-firebase.lock
+47 silly lockFile 8cadb95f-i-npm-firebase-5-0-4-package-tgz tar:///home/pi/.npm/firebase/5.0.4/package.tgz
+48 verbose lock tar:///home/pi/.npm/firebase/5.0.4/package.tgz /home/pi/.npm/8cadb95f-i-npm-firebase-5-0-4-package-tgz.lock
+49 silly gunzTarPerm modes [ '755', '644' ]
+50 silly gunzTarPerm extractEntry package.json
+51 silly gunzTarPerm modified mode [ 'package.json', 416, 420 ]
+52 silly gunzTarPerm extractEntry firebase-app.js
+53 silly gunzTarPerm modified mode [ 'firebase-app.js', 416, 420 ]
+54 silly gunzTarPerm extractEntry firebase-app.js.map
+55 silly gunzTarPerm modified mode [ 'firebase-app.js.map', 416, 420 ]
+56 silly gunzTarPerm extractEntry firebase-auth.js
+57 silly gunzTarPerm modified mode [ 'firebase-auth.js', 416, 420 ]
+58 silly gunzTarPerm extractEntry firebase-auth.js.map
+59 silly gunzTarPerm modified mode [ 'firebase-auth.js.map', 416, 420 ]
+60 silly gunzTarPerm extractEntry firebase-database.js
+61 silly gunzTarPerm modified mode [ 'firebase-database.js', 416, 420 ]
+62 silly gunzTarPerm extractEntry firebase-database.js.map
+63 silly gunzTarPerm modified mode [ 'firebase-database.js.map', 416, 420 ]
+64 silly gunzTarPerm extractEntry firebase-firestore.js
+65 silly gunzTarPerm modified mode [ 'firebase-firestore.js', 416, 420 ]
+66 silly gunzTarPerm extractEntry firebase-firestore.js.map
+67 silly gunzTarPerm modified mode [ 'firebase-firestore.js.map', 416, 420 ]
+68 silly gunzTarPerm extractEntry firebase-functions.js
+69 silly gunzTarPerm modified mode [ 'firebase-functions.js', 416, 420 ]
+70 silly gunzTarPerm extractEntry firebase-functions.js.map
+71 silly gunzTarPerm modified mode [ 'firebase-functions.js.map', 416, 420 ]
+72 silly gunzTarPerm extractEntry firebase-messaging.js
+73 silly gunzTarPerm modified mode [ 'firebase-messaging.js', 416, 420 ]
+74 silly gunzTarPerm extractEntry firebase-messaging.js.map
+75 silly gunzTarPerm modified mode [ 'firebase-messaging.js.map', 416, 420 ]
+76 silly gunzTarPerm extractEntry firebase-storage.js
+77 silly gunzTarPerm modified mode [ 'firebase-storage.js', 416, 420 ]
+78 silly gunzTarPerm extractEntry firebase-storage.js.map
+79 silly gunzTarPerm modified mode [ 'firebase-storage.js.map', 416, 420 ]
+80 silly gunzTarPerm extractEntry firebase.js
+81 silly gunzTarPerm modified mode [ 'firebase.js', 416, 420 ]
+82 silly gunzTarPerm extractEntry index.d.ts
+83 silly gunzTarPerm modified mode [ 'index.d.ts', 416, 420 ]
+84 silly gunzTarPerm extractEntry README.md
+85 silly gunzTarPerm modified mode [ 'README.md', 416, 420 ]
+86 silly gunzTarPerm extractEntry rollup.config.js
+87 silly gunzTarPerm modified mode [ 'rollup.config.js', 416, 420 ]
+88 silly gunzTarPerm extractEntry tsconfig.json
+89 silly gunzTarPerm modified mode [ 'tsconfig.json', 416, 420 ]
+90 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/code/cache/f4c068d7ce4ae33f75de6edbfa5c75a12a938398
+91 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/code/cache/f4c068d7ce4ae33f75de6edbfa5c75a12a938398',
+91 silly gunzTarPerm   416,
+91 silly gunzTarPerm   420 ]
+92 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/semanticDiagnostics/cache/f4c068d7ce4ae33f75de6edbfa5c75a12a938398
+93 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/semanticDiagnostics/cache/f4c068d7ce4ae33f75de6edbfa5c75a12a938398',
+93 silly gunzTarPerm   416,
+93 silly gunzTarPerm   420 ]
+94 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/syntacticDiagnostics/cache/f4c068d7ce4ae33f75de6edbfa5c75a12a938398
+95 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/syntacticDiagnostics/cache/f4c068d7ce4ae33f75de6edbfa5c75a12a938398',
+95 silly gunzTarPerm   416,
+95 silly gunzTarPerm   420 ]
+96 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/0e80673698c2b1a6844d6a2c327fb5505442e123
+97 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/0e80673698c2b1a6844d6a2c327fb5505442e123',
+97 silly gunzTarPerm   416,
+97 silly gunzTarPerm   420 ]
+98 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/1b6f01272beced6d16ca48c6acb727a2ef615e8a
+99 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/1b6f01272beced6d16ca48c6acb727a2ef615e8a',
+99 silly gunzTarPerm   416,
+99 silly gunzTarPerm   420 ]
+100 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/1d4004a4ffb4fceba8b4e8e8cdc0ce5cd880ac57
+101 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/1d4004a4ffb4fceba8b4e8e8cdc0ce5cd880ac57',
+101 silly gunzTarPerm   416,
+101 silly gunzTarPerm   420 ]
+102 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/24d14c34b5b52fbe6b98465f2bd0d4db497e0f34
+103 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/24d14c34b5b52fbe6b98465f2bd0d4db497e0f34',
+103 silly gunzTarPerm   416,
+103 silly gunzTarPerm   420 ]
+104 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/2a5e31b618db17ab3ec521af8a1f9f1186fb9545
+105 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/2a5e31b618db17ab3ec521af8a1f9f1186fb9545',
+105 silly gunzTarPerm   416,
+105 silly gunzTarPerm   420 ]
+106 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/356a56ca96ab2c490fe9d623d8409c6d0a6cd2f9
+107 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/356a56ca96ab2c490fe9d623d8409c6d0a6cd2f9',
+107 silly gunzTarPerm   416,
+107 silly gunzTarPerm   420 ]
+108 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/35cda9eaeee72224fcad4ee71743f594277e2237
+109 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/35cda9eaeee72224fcad4ee71743f594277e2237',
+109 silly gunzTarPerm   416,
+109 silly gunzTarPerm   420 ]
+110 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/40885fb27341915e760308c341086702cc336ac9
+111 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/40885fb27341915e760308c341086702cc336ac9',
+111 silly gunzTarPerm   416,
+111 silly gunzTarPerm   420 ]
+112 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/49c7666f347b2571ed30c9f31d32139bc55beb07
+113 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/49c7666f347b2571ed30c9f31d32139bc55beb07',
+113 silly gunzTarPerm   416,
+113 silly gunzTarPerm   420 ]
+114 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/5c436ac423703f426dde44d4db382bdad4960978
+115 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/5c436ac423703f426dde44d4db382bdad4960978',
+115 silly gunzTarPerm   416,
+115 silly gunzTarPerm   420 ]
+116 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/5e3ccd85a87f56cd6c63c34405a02a91d623ebf0
+117 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/5e3ccd85a87f56cd6c63c34405a02a91d623ebf0',
+117 silly gunzTarPerm   416,
+117 silly gunzTarPerm   420 ]
+118 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/67f347e9ae529224e1362efdd6c0c80518116a83
+119 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/67f347e9ae529224e1362efdd6c0c80518116a83',
+119 silly gunzTarPerm   416,
+119 silly gunzTarPerm   420 ]
+120 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/7ac162a9dd20fd079fbd75c7610bfde510fc88cc
+121 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/7ac162a9dd20fd079fbd75c7610bfde510fc88cc',
+121 silly gunzTarPerm   416,
+121 silly gunzTarPerm   420 ]
+122 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/8502e766388ab441b1ce005d7657dcaeebb61ff5
+123 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/8502e766388ab441b1ce005d7657dcaeebb61ff5',
+123 silly gunzTarPerm   416,
+123 silly gunzTarPerm   420 ]
+124 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/889cafc5adf525002e811fbda276db4dfb03f545
+125 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/889cafc5adf525002e811fbda276db4dfb03f545',
+125 silly gunzTarPerm   416,
+125 silly gunzTarPerm   420 ]
+126 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/9516aa7d65f9700f107427aea13bfc6f225743fa
+127 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/9516aa7d65f9700f107427aea13bfc6f225743fa',
+127 silly gunzTarPerm   416,
+127 silly gunzTarPerm   420 ]
+128 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/af2edcda1106b4203bd6f0a9f949b217494881fe
+129 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/af2edcda1106b4203bd6f0a9f949b217494881fe',
+129 silly gunzTarPerm   416,
+129 silly gunzTarPerm   420 ]
+130 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/b17c602639607fcea613ab826abd4152aa8dec25
+131 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/b17c602639607fcea613ab826abd4152aa8dec25',
+131 silly gunzTarPerm   416,
+131 silly gunzTarPerm   420 ]
+132 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/b9badd6ca57c6e4ac88d43327aa5a1bc577a46e1
+133 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/b9badd6ca57c6e4ac88d43327aa5a1bc577a46e1',
+133 silly gunzTarPerm   416,
+133 silly gunzTarPerm   420 ]
+134 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/c1813b79840f54e84b4808785302d4641941ee32
+135 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/c1813b79840f54e84b4808785302d4641941ee32',
+135 silly gunzTarPerm   416,
+135 silly gunzTarPerm   420 ]
+136 silly gunzTarPerm extractEntry .rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/f4faddd9997b72c38c4482ba721f41e645878256
+137 silly gunzTarPerm modified mode [ '.rpt2_cache/ab40284930642b165e7da098d14a76699fdbae60/types/cache/f4faddd9997b72c38c4482ba721f41e645878256',
+137 silly gunzTarPerm   416,
+137 silly gunzTarPerm   420 ]
+138 silly gunzTarPerm extractEntry app/dist/index.cjs.js
+139 silly gunzTarPerm modified mode [ 'app/dist/index.cjs.js', 416, 420 ]
+140 silly gunzTarPerm extractEntry app/dist/index.esm.js
+141 silly gunzTarPerm modified mode [ 'app/dist/index.esm.js', 416, 420 ]
+142 silly gunzTarPerm extractEntry app/index.ts
+143 silly gunzTarPerm modified mode [ 'app/index.ts', 416, 420 ]
+144 silly gunzTarPerm extractEntry app/package.json
+145 silly gunzTarPerm modified mode [ 'app/package.json', 416, 420 ]
+146 silly gunzTarPerm extractEntry auth/dist/index.cjs.js
+147 silly gunzTarPerm modified mode [ 'auth/dist/index.cjs.js', 416, 420 ]
+148 silly gunzTarPerm extractEntry auth/dist/index.esm.js
+149 silly gunzTarPerm modified mode [ 'auth/dist/index.esm.js', 416, 420 ]
+150 silly gunzTarPerm extractEntry auth/index.ts
+151 silly gunzTarPerm modified mode [ 'auth/index.ts', 416, 420 ]
+152 silly gunzTarPerm extractEntry auth/package.json
+153 silly gunzTarPerm modified mode [ 'auth/package.json', 416, 420 ]
+154 silly gunzTarPerm extractEntry database/dist/index.cjs.js
+155 silly gunzTarPerm modified mode [ 'database/dist/index.cjs.js', 416, 420 ]
+156 silly gunzTarPerm extractEntry database/dist/index.esm.js
+157 silly gunzTarPerm modified mode [ 'database/dist/index.esm.js', 416, 420 ]
+158 silly gunzTarPerm extractEntry database/index.ts
+159 silly gunzTarPerm modified mode [ 'database/index.ts', 416, 420 ]
+160 silly gunzTarPerm extractEntry database/package.json
+161 silly gunzTarPerm modified mode [ 'database/package.json', 416, 420 ]
+162 silly gunzTarPerm extractEntry dist/index.cjs.js
+163 silly gunzTarPerm modified mode [ 'dist/index.cjs.js', 416, 420 ]
+164 silly gunzTarPerm extractEntry dist/index.esm.js
+165 silly gunzTarPerm modified mode [ 'dist/index.esm.js', 416, 420 ]
+166 silly gunzTarPerm extractEntry dist/index.node.cjs.js
+167 silly gunzTarPerm modified mode [ 'dist/index.node.cjs.js', 416, 420 ]
+168 silly gunzTarPerm extractEntry dist/index.rn.cjs.js
+169 silly gunzTarPerm modified mode [ 'dist/index.rn.cjs.js', 416, 420 ]
+170 silly gunzTarPerm extractEntry externs/firebase-app-externs.js
+171 silly gunzTarPerm modified mode [ 'externs/firebase-app-externs.js', 416, 420 ]
+172 silly gunzTarPerm extractEntry externs/firebase-app-internal-externs.js
+173 silly gunzTarPerm modified mode [ 'externs/firebase-app-internal-externs.js', 416, 420 ]
+174 silly gunzTarPerm extractEntry externs/firebase-auth-externs.js
+175 silly gunzTarPerm modified mode [ 'externs/firebase-auth-externs.js', 416, 420 ]
+176 silly gunzTarPerm extractEntry externs/firebase-client-auth-externs.js
+177 silly gunzTarPerm modified mode [ 'externs/firebase-client-auth-externs.js', 416, 420 ]
+178 silly gunzTarPerm extractEntry externs/firebase-database-externs.js
+179 silly gunzTarPerm modified mode [ 'externs/firebase-database-externs.js', 416, 420 ]
+180 silly gunzTarPerm extractEntry externs/firebase-database-internal-externs.js
+181 silly gunzTarPerm modified mode [ 'externs/firebase-database-internal-externs.js', 416, 420 ]
+182 silly gunzTarPerm extractEntry externs/firebase-error-externs.js
+183 silly gunzTarPerm modified mode [ 'externs/firebase-error-externs.js', 416, 420 ]
+184 silly gunzTarPerm extractEntry externs/firebase-externs.js
+185 silly gunzTarPerm modified mode [ 'externs/firebase-externs.js', 416, 420 ]
+186 silly gunzTarPerm extractEntry externs/firebase-firestore-externs.js
+187 silly gunzTarPerm modified mode [ 'externs/firebase-firestore-externs.js', 416, 420 ]
+188 silly gunzTarPerm extractEntry externs/firebase-messaging-externs.js
+189 silly gunzTarPerm modified mode [ 'externs/firebase-messaging-externs.js', 416, 420 ]
+190 silly gunzTarPerm extractEntry externs/firebase-storage-externs.js
+191 silly gunzTarPerm modified mode [ 'externs/firebase-storage-externs.js', 416, 420 ]
+192 silly gunzTarPerm extractEntry firestore/dist/index.cjs.js
+193 silly gunzTarPerm modified mode [ 'firestore/dist/index.cjs.js', 416, 420 ]
+194 silly gunzTarPerm extractEntry firestore/dist/index.esm.js
+195 silly gunzTarPerm modified mode [ 'firestore/dist/index.esm.js', 416, 420 ]
+196 silly gunzTarPerm extractEntry firestore/index.ts
+197 silly gunzTarPerm modified mode [ 'firestore/index.ts', 416, 420 ]
+198 silly gunzTarPerm extractEntry firestore/package.json
+199 silly gunzTarPerm modified mode [ 'firestore/package.json', 416, 420 ]
+200 silly gunzTarPerm extractEntry functions/dist/index.cjs.js
+201 silly gunzTarPerm modified mode [ 'functions/dist/index.cjs.js', 416, 420 ]
+202 silly gunzTarPerm extractEntry functions/dist/index.esm.js
+203 silly gunzTarPerm modified mode [ 'functions/dist/index.esm.js', 416, 420 ]
+204 silly gunzTarPerm extractEntry functions/index.ts
+205 silly gunzTarPerm modified mode [ 'functions/index.ts', 416, 420 ]
+206 silly gunzTarPerm extractEntry functions/package.json
+207 silly gunzTarPerm modified mode [ 'functions/package.json', 416, 420 ]
+208 silly gunzTarPerm extractEntry messaging/dist/index.cjs.js
+209 silly gunzTarPerm modified mode [ 'messaging/dist/index.cjs.js', 416, 420 ]
+210 silly gunzTarPerm extractEntry messaging/dist/index.esm.js
+211 silly gunzTarPerm modified mode [ 'messaging/dist/index.esm.js', 416, 420 ]
+212 silly gunzTarPerm extractEntry messaging/index.ts
+213 silly gunzTarPerm modified mode [ 'messaging/index.ts', 416, 420 ]
+214 silly gunzTarPerm extractEntry messaging/package.json
+215 silly gunzTarPerm modified mode [ 'messaging/package.json', 416, 420 ]
+216 silly gunzTarPerm extractEntry src/index.cdn.ts
+217 silly gunzTarPerm modified mode [ 'src/index.cdn.ts', 416, 420 ]
+218 silly gunzTarPerm extractEntry src/index.node.ts
+219 silly gunzTarPerm modified mode [ 'src/index.node.ts', 416, 420 ]
+220 silly gunzTarPerm extractEntry src/index.rn.ts
+221 silly gunzTarPerm modified mode [ 'src/index.rn.ts', 416, 420 ]
+222 silly gunzTarPerm extractEntry src/index.ts
+223 silly gunzTarPerm modified mode [ 'src/index.ts', 416, 420 ]
+224 silly gunzTarPerm extractEntry storage/dist/index.cjs.js
+225 silly gunzTarPerm modified mode [ 'storage/dist/index.cjs.js', 416, 420 ]
+226 silly gunzTarPerm extractEntry storage/dist/index.esm.js
+227 silly gunzTarPerm modified mode [ 'storage/dist/index.esm.js', 416, 420 ]
+228 silly gunzTarPerm extractEntry storage/index.ts
+229 silly gunzTarPerm modified mode [ 'storage/index.ts', 416, 420 ]
+230 silly gunzTarPerm extractEntry storage/package.json
+231 silly gunzTarPerm modified mode [ 'storage/package.json', 416, 420 ]
+232 silly lockFile e81380df-ar-home-pi-node-modules-firebase tar:///home/pi/node_modules/firebase
+233 silly lockFile e81380df-ar-home-pi-node-modules-firebase tar:///home/pi/node_modules/firebase
+234 silly lockFile 8cadb95f-i-npm-firebase-5-0-4-package-tgz tar:///home/pi/.npm/firebase/5.0.4/package.tgz
+235 silly lockFile 8cadb95f-i-npm-firebase-5-0-4-package-tgz tar:///home/pi/.npm/firebase/5.0.4/package.tgz
+236 info preinstall firebase@5.0.4
+237 verbose readDependencies using package.json deps
+238 verbose readDependencies using package.json deps
+239 verbose cache add [ '@firebase/firestore@0.5.4', null ]
+240 verbose cache add name=undefined spec="@firebase/firestore@0.5.4" args=["@firebase/firestore@0.5.4",null]
+241 verbose parsed url Url {
+241 verbose parsed url   protocol: null,
+241 verbose parsed url   slashes: null,
+241 verbose parsed url   auth: null,
+241 verbose parsed url   host: null,
+241 verbose parsed url   port: null,
+241 verbose parsed url   hostname: null,
+241 verbose parsed url   hash: null,
+241 verbose parsed url   search: null,
+241 verbose parsed url   query: null,
+241 verbose parsed url   pathname: '@firebase/firestore@0.5.4',
+241 verbose parsed url   path: '@firebase/firestore@0.5.4',
+241 verbose parsed url   href: '@firebase/firestore@0.5.4' }
+242 verbose cache add [ '@firebase/functions@0.2.4', null ]
+243 verbose cache add name=undefined spec="@firebase/functions@0.2.4" args=["@firebase/functions@0.2.4",null]
+244 verbose parsed url Url {
+244 verbose parsed url   protocol: null,
+244 verbose parsed url   slashes: null,
+244 verbose parsed url   auth: null,
+244 verbose parsed url   host: null,
+244 verbose parsed url   port: null,
+244 verbose parsed url   hostname: null,
+244 verbose parsed url   hash: null,
+244 verbose parsed url   search: null,
+244 verbose parsed url   query: null,
+244 verbose parsed url   pathname: '@firebase/functions@0.2.4',
+244 verbose parsed url   path: '@firebase/functions@0.2.4',
+244 verbose parsed url   href: '@firebase/functions@0.2.4' }
+245 verbose cache add [ '@firebase/messaging@0.3.4', null ]
+246 verbose cache add name=undefined spec="@firebase/messaging@0.3.4" args=["@firebase/messaging@0.3.4",null]
+247 verbose parsed url Url {
+247 verbose parsed url   protocol: null,
+247 verbose parsed url   slashes: null,
+247 verbose parsed url   auth: null,
+247 verbose parsed url   host: null,
+247 verbose parsed url   port: null,
+247 verbose parsed url   hostname: null,
+247 verbose parsed url   hash: null,
+247 verbose parsed url   search: null,
+247 verbose parsed url   query: null,
+247 verbose parsed url   pathname: '@firebase/messaging@0.3.4',
+247 verbose parsed url   path: '@firebase/messaging@0.3.4',
+247 verbose parsed url   href: '@firebase/messaging@0.3.4' }
+248 verbose cache add [ '@firebase/polyfill@0.3.3', null ]
+249 verbose cache add name=undefined spec="@firebase/polyfill@0.3.3" args=["@firebase/polyfill@0.3.3",null]
+250 verbose parsed url Url {
+250 verbose parsed url   protocol: null,
+250 verbose parsed url   slashes: null,
+250 verbose parsed url   auth: null,
+250 verbose parsed url   host: null,
+250 verbose parsed url   port: null,
+250 verbose parsed url   hostname: null,
+250 verbose parsed url   hash: null,
+250 verbose parsed url   search: null,
+250 verbose parsed url   query: null,
+250 verbose parsed url   pathname: '@firebase/polyfill@0.3.3',
+250 verbose parsed url   path: '@firebase/polyfill@0.3.3',
+250 verbose parsed url   href: '@firebase/polyfill@0.3.3' }
+251 verbose cache add [ '@firebase/storage@0.2.3', null ]
+252 verbose cache add name=undefined spec="@firebase/storage@0.2.3" args=["@firebase/storage@0.2.3",null]
+253 verbose parsed url Url {
+253 verbose parsed url   protocol: null,
+253 verbose parsed url   slashes: null,
+253 verbose parsed url   auth: null,
+253 verbose parsed url   host: null,
+253 verbose parsed url   port: null,
+253 verbose parsed url   hostname: null,
+253 verbose parsed url   hash: null,
+253 verbose parsed url   search: null,
+253 verbose parsed url   query: null,
+253 verbose parsed url   pathname: '@firebase/storage@0.2.3',
+253 verbose parsed url   path: '@firebase/storage@0.2.3',
+253 verbose parsed url   href: '@firebase/storage@0.2.3' }
+254 verbose cache add [ '@firebase/app@0.3.3', null ]
+255 verbose cache add name=undefined spec="@firebase/app@0.3.3" args=["@firebase/app@0.3.3",null]
+256 verbose parsed url Url {
+256 verbose parsed url   protocol: null,
+256 verbose parsed url   slashes: null,
+256 verbose parsed url   auth: null,
+256 verbose parsed url   host: null,
+256 verbose parsed url   port: null,
+256 verbose parsed url   hostname: null,
+256 verbose parsed url   hash: null,
+256 verbose parsed url   search: null,
+256 verbose parsed url   query: null,
+256 verbose parsed url   pathname: '@firebase/app@0.3.3',
+256 verbose parsed url   path: '@firebase/app@0.3.3',
+256 verbose parsed url   href: '@firebase/app@0.3.3' }
+257 verbose cache add [ '@firebase/auth@0.5.3', null ]
+258 verbose cache add name=undefined spec="@firebase/auth@0.5.3" args=["@firebase/auth@0.5.3",null]
+259 verbose parsed url Url {
+259 verbose parsed url   protocol: null,
+259 verbose parsed url   slashes: null,
+259 verbose parsed url   auth: null,
+259 verbose parsed url   host: null,
+259 verbose parsed url   port: null,
+259 verbose parsed url   hostname: null,
+259 verbose parsed url   hash: null,
+259 verbose parsed url   search: null,
+259 verbose parsed url   query: null,
+259 verbose parsed url   pathname: '@firebase/auth@0.5.3',
+259 verbose parsed url   path: '@firebase/auth@0.5.3',
+259 verbose parsed url   href: '@firebase/auth@0.5.3' }
+260 verbose cache add [ '@firebase/database@0.3.3', null ]
+261 verbose cache add name=undefined spec="@firebase/database@0.3.3" args=["@firebase/database@0.3.3",null]
+262 verbose parsed url Url {
+262 verbose parsed url   protocol: null,
+262 verbose parsed url   slashes: null,
+262 verbose parsed url   auth: null,
+262 verbose parsed url   host: null,
+262 verbose parsed url   port: null,
+262 verbose parsed url   hostname: null,
+262 verbose parsed url   hash: null,
+262 verbose parsed url   search: null,
+262 verbose parsed url   query: null,
+262 verbose parsed url   pathname: '@firebase/database@0.3.3',
+262 verbose parsed url   path: '@firebase/database@0.3.3',
+262 verbose parsed url   href: '@firebase/database@0.3.3' }
+263 verbose cache add name="" spec="firebase/firestore@0.5.4" args=["","firebase/firestore@0.5.4"]
+264 verbose parsed url Url {
+264 verbose parsed url   protocol: null,
+264 verbose parsed url   slashes: null,
+264 verbose parsed url   auth: null,
+264 verbose parsed url   host: null,
+264 verbose parsed url   port: null,
+264 verbose parsed url   hostname: null,
+264 verbose parsed url   hash: null,
+264 verbose parsed url   search: null,
+264 verbose parsed url   query: null,
+264 verbose parsed url   pathname: 'firebase/firestore@0.5.4',
+264 verbose parsed url   path: 'firebase/firestore@0.5.4',
+264 verbose parsed url   href: 'firebase/firestore@0.5.4' }
+265 verbose cache add name="" spec="firebase/functions@0.2.4" args=["","firebase/functions@0.2.4"]
+266 verbose parsed url Url {
+266 verbose parsed url   protocol: null,
+266 verbose parsed url   slashes: null,
+266 verbose parsed url   auth: null,
+266 verbose parsed url   host: null,
+266 verbose parsed url   port: null,
+266 verbose parsed url   hostname: null,
+266 verbose parsed url   hash: null,
+266 verbose parsed url   search: null,
+266 verbose parsed url   query: null,
+266 verbose parsed url   pathname: 'firebase/functions@0.2.4',
+266 verbose parsed url   path: 'firebase/functions@0.2.4',
+266 verbose parsed url   href: 'firebase/functions@0.2.4' }
+267 verbose cache add name="" spec="firebase/messaging@0.3.4" args=["","firebase/messaging@0.3.4"]
+268 verbose parsed url Url {
+268 verbose parsed url   protocol: null,
+268 verbose parsed url   slashes: null,
+268 verbose parsed url   auth: null,
+268 verbose parsed url   host: null,
+268 verbose parsed url   port: null,
+268 verbose parsed url   hostname: null,
+268 verbose parsed url   hash: null,
+268 verbose parsed url   search: null,
+268 verbose parsed url   query: null,
+268 verbose parsed url   pathname: 'firebase/messaging@0.3.4',
+268 verbose parsed url   path: 'firebase/messaging@0.3.4',
+268 verbose parsed url   href: 'firebase/messaging@0.3.4' }
+269 verbose cache add name="" spec="firebase/polyfill@0.3.3" args=["","firebase/polyfill@0.3.3"]
+270 verbose parsed url Url {
+270 verbose parsed url   protocol: null,
+270 verbose parsed url   slashes: null,
+270 verbose parsed url   auth: null,
+270 verbose parsed url   host: null,
+270 verbose parsed url   port: null,
+270 verbose parsed url   hostname: null,
+270 verbose parsed url   hash: null,
+270 verbose parsed url   search: null,
+270 verbose parsed url   query: null,
+270 verbose parsed url   pathname: 'firebase/polyfill@0.3.3',
+270 verbose parsed url   path: 'firebase/polyfill@0.3.3',
+270 verbose parsed url   href: 'firebase/polyfill@0.3.3' }
+271 verbose cache add name="" spec="firebase/storage@0.2.3" args=["","firebase/storage@0.2.3"]
+272 verbose parsed url Url {
+272 verbose parsed url   protocol: null,
+272 verbose parsed url   slashes: null,
+272 verbose parsed url   auth: null,
+272 verbose parsed url   host: null,
+272 verbose parsed url   port: null,
+272 verbose parsed url   hostname: null,
+272 verbose parsed url   hash: null,
+272 verbose parsed url   search: null,
+272 verbose parsed url   query: null,
+272 verbose parsed url   pathname: 'firebase/storage@0.2.3',
+272 verbose parsed url   path: 'firebase/storage@0.2.3',
+272 verbose parsed url   href: 'firebase/storage@0.2.3' }
+273 verbose cache add name="" spec="firebase/app@0.3.3" args=["","firebase/app@0.3.3"]
+274 verbose parsed url Url {
+274 verbose parsed url   protocol: null,
+274 verbose parsed url   slashes: null,
+274 verbose parsed url   auth: null,
+274 verbose parsed url   host: null,
+274 verbose parsed url   port: null,
+274 verbose parsed url   hostname: null,
+274 verbose parsed url   hash: null,
+274 verbose parsed url   search: null,
+274 verbose parsed url   query: null,
+274 verbose parsed url   pathname: 'firebase/app@0.3.3',
+274 verbose parsed url   path: 'firebase/app@0.3.3',
+274 verbose parsed url   href: 'firebase/app@0.3.3' }
+275 verbose cache add name="" spec="firebase/auth@0.5.3" args=["","firebase/auth@0.5.3"]
+276 verbose parsed url Url {
+276 verbose parsed url   protocol: null,
+276 verbose parsed url   slashes: null,
+276 verbose parsed url   auth: null,
+276 verbose parsed url   host: null,
+276 verbose parsed url   port: null,
+276 verbose parsed url   hostname: null,
+276 verbose parsed url   hash: null,
+276 verbose parsed url   search: null,
+276 verbose parsed url   query: null,
+276 verbose parsed url   pathname: 'firebase/auth@0.5.3',
+276 verbose parsed url   path: 'firebase/auth@0.5.3',
+276 verbose parsed url   href: 'firebase/auth@0.5.3' }
+277 verbose cache add name="" spec="firebase/database@0.3.3" args=["","firebase/database@0.3.3"]
+278 verbose parsed url Url {
+278 verbose parsed url   protocol: null,
+278 verbose parsed url   slashes: null,
+278 verbose parsed url   auth: null,
+278 verbose parsed url   host: null,
+278 verbose parsed url   port: null,
+278 verbose parsed url   hostname: null,
+278 verbose parsed url   hash: null,
+278 verbose parsed url   search: null,
+278 verbose parsed url   query: null,
+278 verbose parsed url   pathname: 'firebase/database@0.3.3',
+278 verbose parsed url   path: 'firebase/database@0.3.3',
+278 verbose parsed url   href: 'firebase/database@0.3.3' }
+279 verbose cache add name="firebase/firestore" spec="0.5.4" args=["firebase/firestore","0.5.4"]
+280 verbose parsed url Url {
+280 verbose parsed url   protocol: null,
+280 verbose parsed url   slashes: null,
+280 verbose parsed url   auth: null,
+280 verbose parsed url   host: null,
+280 verbose parsed url   port: null,
+280 verbose parsed url   hostname: null,
+280 verbose parsed url   hash: null,
+280 verbose parsed url   search: null,
+280 verbose parsed url   query: null,
+280 verbose parsed url   pathname: '0.5.4',
+280 verbose parsed url   path: '0.5.4',
+280 verbose parsed url   href: '0.5.4' }
+281 verbose addNamed [ 'firebase/firestore', '0.5.4' ]
+282 verbose addNamed [ '0.5.4', '0.5.4' ]
+283 silly lockFile 4651dd2e-firebase-firestore-0-5-4 firebase/firestore@0.5.4
+284 verbose lock firebase/firestore@0.5.4 /home/pi/.npm/4651dd2e-firebase-firestore-0-5-4.lock
+285 verbose cache add name="firebase/functions" spec="0.2.4" args=["firebase/functions","0.2.4"]
+286 verbose parsed url Url {
+286 verbose parsed url   protocol: null,
+286 verbose parsed url   slashes: null,
+286 verbose parsed url   auth: null,
+286 verbose parsed url   host: null,
+286 verbose parsed url   port: null,
+286 verbose parsed url   hostname: null,
+286 verbose parsed url   hash: null,
+286 verbose parsed url   search: null,
+286 verbose parsed url   query: null,
+286 verbose parsed url   pathname: '0.2.4',
+286 verbose parsed url   path: '0.2.4',
+286 verbose parsed url   href: '0.2.4' }
+287 verbose addNamed [ 'firebase/functions', '0.2.4' ]
+288 verbose addNamed [ '0.2.4', '0.2.4' ]
+289 silly lockFile 1673cc35-firebase-functions-0-2-4 firebase/functions@0.2.4
+290 verbose lock firebase/functions@0.2.4 /home/pi/.npm/1673cc35-firebase-functions-0-2-4.lock
+291 verbose cache add name="firebase/messaging" spec="0.3.4" args=["firebase/messaging","0.3.4"]
+292 verbose parsed url Url {
+292 verbose parsed url   protocol: null,
+292 verbose parsed url   slashes: null,
+292 verbose parsed url   auth: null,
+292 verbose parsed url   host: null,
+292 verbose parsed url   port: null,
+292 verbose parsed url   hostname: null,
+292 verbose parsed url   hash: null,
+292 verbose parsed url   search: null,
+292 verbose parsed url   query: null,
+292 verbose parsed url   pathname: '0.3.4',
+292 verbose parsed url   path: '0.3.4',
+292 verbose parsed url   href: '0.3.4' }
+293 verbose addNamed [ 'firebase/messaging', '0.3.4' ]
+294 verbose addNamed [ '0.3.4', '0.3.4' ]
+295 silly lockFile 92fc95e7-firebase-messaging-0-3-4 firebase/messaging@0.3.4
+296 verbose lock firebase/messaging@0.3.4 /home/pi/.npm/92fc95e7-firebase-messaging-0-3-4.lock
+297 verbose cache add name="firebase/polyfill" spec="0.3.3" args=["firebase/polyfill","0.3.3"]
+298 verbose parsed url Url {
+298 verbose parsed url   protocol: null,
+298 verbose parsed url   slashes: null,
+298 verbose parsed url   auth: null,
+298 verbose parsed url   host: null,
+298 verbose parsed url   port: null,
+298 verbose parsed url   hostname: null,
+298 verbose parsed url   hash: null,
+298 verbose parsed url   search: null,
+298 verbose parsed url   query: null,
+298 verbose parsed url   pathname: '0.3.3',
+298 verbose parsed url   path: '0.3.3',
+298 verbose parsed url   href: '0.3.3' }
+299 verbose addNamed [ 'firebase/polyfill', '0.3.3' ]
+300 verbose addNamed [ '0.3.3', '0.3.3' ]
+301 silly lockFile 0aec913c-firebase-polyfill-0-3-3 firebase/polyfill@0.3.3
+302 verbose lock firebase/polyfill@0.3.3 /home/pi/.npm/0aec913c-firebase-polyfill-0-3-3.lock
+303 verbose cache add name="firebase/storage" spec="0.2.3" args=["firebase/storage","0.2.3"]
+304 verbose parsed url Url {
+304 verbose parsed url   protocol: null,
+304 verbose parsed url   slashes: null,
+304 verbose parsed url   auth: null,
+304 verbose parsed url   host: null,
+304 verbose parsed url   port: null,
+304 verbose parsed url   hostname: null,
+304 verbose parsed url   hash: null,
+304 verbose parsed url   search: null,
+304 verbose parsed url   query: null,
+304 verbose parsed url   pathname: '0.2.3',
+304 verbose parsed url   path: '0.2.3',
+304 verbose parsed url   href: '0.2.3' }
+305 verbose addNamed [ 'firebase/storage', '0.2.3' ]
+306 verbose addNamed [ '0.2.3', '0.2.3' ]
+307 silly lockFile f38aa813-firebase-storage-0-2-3 firebase/storage@0.2.3
+308 verbose lock firebase/storage@0.2.3 /home/pi/.npm/f38aa813-firebase-storage-0-2-3.lock
+309 verbose cache add name="firebase/app" spec="0.3.3" args=["firebase/app","0.3.3"]
+310 verbose parsed url Url {
+310 verbose parsed url   protocol: null,
+310 verbose parsed url   slashes: null,
+310 verbose parsed url   auth: null,
+310 verbose parsed url   host: null,
+310 verbose parsed url   port: null,
+310 verbose parsed url   hostname: null,
+310 verbose parsed url   hash: null,
+310 verbose parsed url   search: null,
+310 verbose parsed url   query: null,
+310 verbose parsed url   pathname: '0.3.3',
+310 verbose parsed url   path: '0.3.3',
+310 verbose parsed url   href: '0.3.3' }
+311 verbose addNamed [ 'firebase/app', '0.3.3' ]
+312 verbose addNamed [ '0.3.3', '0.3.3' ]
+313 silly lockFile ba25739d-firebase-app-0-3-3 firebase/app@0.3.3
+314 verbose lock firebase/app@0.3.3 /home/pi/.npm/ba25739d-firebase-app-0-3-3.lock
+315 verbose cache add name="firebase/auth" spec="0.5.3" args=["firebase/auth","0.5.3"]
+316 verbose parsed url Url {
+316 verbose parsed url   protocol: null,
+316 verbose parsed url   slashes: null,
+316 verbose parsed url   auth: null,
+316 verbose parsed url   host: null,
+316 verbose parsed url   port: null,
+316 verbose parsed url   hostname: null,
+316 verbose parsed url   hash: null,
+316 verbose parsed url   search: null,
+316 verbose parsed url   query: null,
+316 verbose parsed url   pathname: '0.5.3',
+316 verbose parsed url   path: '0.5.3',
+316 verbose parsed url   href: '0.5.3' }
+317 verbose addNamed [ 'firebase/auth', '0.5.3' ]
+318 verbose addNamed [ '0.5.3', '0.5.3' ]
+319 silly lockFile 5069f558-firebase-auth-0-5-3 firebase/auth@0.5.3
+320 verbose lock firebase/auth@0.5.3 /home/pi/.npm/5069f558-firebase-auth-0-5-3.lock
+321 verbose cache add name="firebase/database" spec="0.3.3" args=["firebase/database","0.3.3"]
+322 verbose parsed url Url {
+322 verbose parsed url   protocol: null,
+322 verbose parsed url   slashes: null,
+322 verbose parsed url   auth: null,
+322 verbose parsed url   host: null,
+322 verbose parsed url   port: null,
+322 verbose parsed url   hostname: null,
+322 verbose parsed url   hash: null,
+322 verbose parsed url   search: null,
+322 verbose parsed url   query: null,
+322 verbose parsed url   pathname: '0.3.3',
+322 verbose parsed url   path: '0.3.3',
+322 verbose parsed url   href: '0.3.3' }
+323 verbose addNamed [ 'firebase/database', '0.3.3' ]
+324 verbose addNamed [ '0.3.3', '0.3.3' ]
+325 silly lockFile 5ee2e8c0-firebase-database-0-3-3 firebase/database@0.3.3
+326 verbose lock firebase/database@0.3.3 /home/pi/.npm/5ee2e8c0-firebase-database-0-3-3.lock
+327 verbose request where is /firebase/firestore
+328 verbose request registry https://registry.npmjs.org/
+329 verbose url raw /firebase/firestore
+330 verbose url resolving [ 'https://registry.npmjs.org/', './firebase/firestore' ]
+331 verbose url resolved https://registry.npmjs.org/firebase/firestore
+332 verbose request where is https://registry.npmjs.org/firebase/firestore
+333 info trying registry request attempt 1 at 15:27:01
+334 http GET https://registry.npmjs.org/firebase/firestore
+335 verbose request where is /firebase/functions
+336 verbose request registry https://registry.npmjs.org/
+337 verbose url raw /firebase/functions
+338 verbose url resolving [ 'https://registry.npmjs.org/', './firebase/functions' ]
+339 verbose url resolved https://registry.npmjs.org/firebase/functions
+340 verbose request where is https://registry.npmjs.org/firebase/functions
+341 info trying registry request attempt 1 at 15:27:01
+342 http GET https://registry.npmjs.org/firebase/functions
+343 verbose request where is /firebase/app
+344 verbose request registry https://registry.npmjs.org/
+345 verbose url raw /firebase/app
+346 verbose url resolving [ 'https://registry.npmjs.org/', './firebase/app' ]
+347 verbose url resolved https://registry.npmjs.org/firebase/app
+348 verbose request where is https://registry.npmjs.org/firebase/app
+349 info trying registry request attempt 1 at 15:27:01
+350 http GET https://registry.npmjs.org/firebase/app
+351 verbose request where is /firebase/auth
+352 verbose request registry https://registry.npmjs.org/
+353 verbose url raw /firebase/auth
+354 verbose url resolving [ 'https://registry.npmjs.org/', './firebase/auth' ]
+355 verbose url resolved https://registry.npmjs.org/firebase/auth
+356 verbose request where is https://registry.npmjs.org/firebase/auth
+357 info trying registry request attempt 1 at 15:27:01
+358 http GET https://registry.npmjs.org/firebase/auth
+359 verbose request where is /firebase/database
+360 verbose request registry https://registry.npmjs.org/
+361 verbose url raw /firebase/database
+362 verbose url resolving [ 'https://registry.npmjs.org/', './firebase/database' ]
+363 verbose url resolved https://registry.npmjs.org/firebase/database
+364 verbose request where is https://registry.npmjs.org/firebase/database
+365 info trying registry request attempt 1 at 15:27:01
+366 http GET https://registry.npmjs.org/firebase/database
+367 verbose request where is /firebase/messaging
+368 verbose request registry https://registry.npmjs.org/
+369 verbose url raw /firebase/messaging
+370 verbose url resolving [ 'https://registry.npmjs.org/', './firebase/messaging' ]
+371 verbose url resolved https://registry.npmjs.org/firebase/messaging
+372 verbose request where is https://registry.npmjs.org/firebase/messaging
+373 info trying registry request attempt 1 at 15:27:01
+374 http GET https://registry.npmjs.org/firebase/messaging
+375 verbose request where is /firebase/polyfill
+376 verbose request registry https://registry.npmjs.org/
+377 verbose url raw /firebase/polyfill
+378 verbose url resolving [ 'https://registry.npmjs.org/', './firebase/polyfill' ]
+379 verbose url resolved https://registry.npmjs.org/firebase/polyfill
+380 verbose request where is https://registry.npmjs.org/firebase/polyfill
+381 info trying registry request attempt 1 at 15:27:01
+382 http GET https://registry.npmjs.org/firebase/polyfill
+383 verbose request where is /firebase/storage
+384 verbose request registry https://registry.npmjs.org/
+385 verbose url raw /firebase/storage
+386 verbose url resolving [ 'https://registry.npmjs.org/', './firebase/storage' ]
+387 verbose url resolved https://registry.npmjs.org/firebase/storage
+388 verbose request where is https://registry.npmjs.org/firebase/storage
+389 info trying registry request attempt 1 at 15:27:01
+390 http GET https://registry.npmjs.org/firebase/storage
+391 http 405 https://registry.npmjs.org/firebase/auth
+392 silly registry.get cb [ 405,
+392 silly registry.get   { date: 'Wed, 06 Jun 2018 17:27:02 GMT',
+392 silly registry.get     'content-type': 'application/json',
+392 silly registry.get     'content-length': '63',
+392 silly registry.get     connection: 'close',
+392 silly registry.get     'set-cookie': [ '__cfduid=dc08834453a9a7c72a36af3a80fe53cde1528306022; expires=Thu, 06-Jun-19 17:27:02 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+392 silly registry.get     allow: 'PUT',
+392 silly registry.get     'cf-ray': '426c965ece594bd5-GRU',
+392 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+392 silly registry.get     server: 'cloudflare' } ]
+393 http 405 https://registry.npmjs.org/firebase/storage
+394 silly registry.get cb [ 405,
+394 silly registry.get   { date: 'Wed, 06 Jun 2018 17:27:03 GMT',
+394 silly registry.get     'content-type': 'application/json',
+394 silly registry.get     'content-length': '63',
+394 silly registry.get     connection: 'close',
+394 silly registry.get     'set-cookie': [ '__cfduid=d635810efa3a26262694396610f4ff9221528306022; expires=Thu, 06-Jun-19 17:27:02 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+394 silly registry.get     allow: 'PUT',
+394 silly registry.get     'cf-ray': '426c965edf1f4ba5-GRU',
+394 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+394 silly registry.get     server: 'cloudflare' } ]
+395 http 405 https://registry.npmjs.org/firebase/polyfill
+396 silly registry.get cb [ 405,
+396 silly registry.get   { date: 'Wed, 06 Jun 2018 17:27:03 GMT',
+396 silly registry.get     'content-type': 'application/json',
+396 silly registry.get     'content-length': '63',
+396 silly registry.get     connection: 'close',
+396 silly registry.get     'set-cookie': [ '__cfduid=dff0e9d7939f82ffb45001cf8de47c9181528306022; expires=Thu, 06-Jun-19 17:27:02 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+396 silly registry.get     allow: 'PUT',
+396 silly registry.get     'cf-ray': '426c965ecc434b8d-GRU',
+396 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+396 silly registry.get     server: 'cloudflare' } ]
+397 http 405 https://registry.npmjs.org/firebase/database
+398 silly registry.get cb [ 405,
+398 silly registry.get   { date: 'Wed, 06 Jun 2018 17:27:03 GMT',
+398 silly registry.get     'content-type': 'application/json',
+398 silly registry.get     'content-length': '63',
+398 silly registry.get     connection: 'close',
+398 silly registry.get     'set-cookie': [ '__cfduid=d4164fe10cbd3469974acd0eadca1cede1528306022; expires=Thu, 06-Jun-19 17:27:02 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+398 silly registry.get     allow: 'PUT',
+398 silly registry.get     'cf-ray': '426c965ed8f34b99-GRU',
+398 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+398 silly registry.get     server: 'cloudflare' } ]
+399 http 405 https://registry.npmjs.org/firebase/messaging
+400 silly registry.get cb [ 405,
+400 silly registry.get   { date: 'Wed, 06 Jun 2018 17:27:03 GMT',
+400 silly registry.get     'content-type': 'application/json',
+400 silly registry.get     'content-length': '63',
+400 silly registry.get     connection: 'close',
+400 silly registry.get     'set-cookie': [ '__cfduid=dcac6527b23230acb37a3ce68eea882a71528306022; expires=Thu, 06-Jun-19 17:27:02 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+400 silly registry.get     allow: 'PUT',
+400 silly registry.get     'cf-ray': '426c965edd424b9f-GRU',
+400 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+400 silly registry.get     server: 'cloudflare' } ]
+401 http 405 https://registry.npmjs.org/firebase/functions
+402 silly registry.get cb [ 405,
+402 silly registry.get   { date: 'Wed, 06 Jun 2018 17:27:03 GMT',
+402 silly registry.get     'content-type': 'application/json',
+402 silly registry.get     'content-length': '63',
+402 silly registry.get     connection: 'close',
+402 silly registry.get     'set-cookie': [ '__cfduid=dc08834453a9a7c72a36af3a80fe53cde1528306022; expires=Thu, 06-Jun-19 17:27:02 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+402 silly registry.get     allow: 'PUT',
+402 silly registry.get     'cf-ray': '426c965ece554bd5-GRU',
+402 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+402 silly registry.get     server: 'cloudflare' } ]
+403 silly lockFile 5069f558-firebase-auth-0-5-3 firebase/auth@0.5.3
+404 silly lockFile 5069f558-firebase-auth-0-5-3 firebase/auth@0.5.3
+405 silly lockFile f38aa813-firebase-storage-0-2-3 firebase/storage@0.2.3
+406 silly lockFile f38aa813-firebase-storage-0-2-3 firebase/storage@0.2.3
+407 silly lockFile 0aec913c-firebase-polyfill-0-3-3 firebase/polyfill@0.3.3
+408 silly lockFile 0aec913c-firebase-polyfill-0-3-3 firebase/polyfill@0.3.3
+409 verbose about to build /home/pi/node_modules/firebase
+410 verbose node_modules/firebase unbuild
+411 info preuninstall firebase@5.0.4
+412 silly lockFile 5ee2e8c0-firebase-database-0-3-3 firebase/database@0.3.3
+413 silly lockFile 5ee2e8c0-firebase-database-0-3-3 firebase/database@0.3.3
+414 silly lockFile 92fc95e7-firebase-messaging-0-3-4 firebase/messaging@0.3.4
+415 silly lockFile 92fc95e7-firebase-messaging-0-3-4 firebase/messaging@0.3.4
+416 silly lockFile 1673cc35-firebase-functions-0-2-4 firebase/functions@0.2.4
+417 silly lockFile 1673cc35-firebase-functions-0-2-4 firebase/functions@0.2.4
+418 info uninstall firebase@5.0.4
+419 verbose true,/home/pi/node_modules,/home/pi/node_modules unbuild firebase@5.0.4
+420 info postuninstall firebase@5.0.4
+421 http 405 https://registry.npmjs.org/firebase/firestore
+422 silly registry.get cb [ 405,
+422 silly registry.get   { date: 'Wed, 06 Jun 2018 17:27:03 GMT',
+422 silly registry.get     'content-type': 'application/json',
+422 silly registry.get     'content-length': '63',
+422 silly registry.get     connection: 'close',
+422 silly registry.get     'set-cookie': [ '__cfduid=dc08834453a9a7c72a36af3a80fe53cde1528306022; expires=Thu, 06-Jun-19 17:27:02 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+422 silly registry.get     allow: 'PUT',
+422 silly registry.get     'cf-ray': '426c965ebe4b4bd5-GRU',
+422 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+422 silly registry.get     server: 'cloudflare' } ]
+423 http 405 https://registry.npmjs.org/firebase/app
+424 silly registry.get cb [ 405,
+424 silly registry.get   { date: 'Wed, 06 Jun 2018 17:27:03 GMT',
+424 silly registry.get     'content-type': 'application/json',
+424 silly registry.get     'content-length': '63',
+424 silly registry.get     connection: 'close',
+424 silly registry.get     'set-cookie': [ '__cfduid=dd4162e8775cf69400171b2cdb7b03f3c1528306022; expires=Thu, 06-Jun-19 17:27:02 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+424 silly registry.get     allow: 'PUT',
+424 silly registry.get     'cf-ray': '426c965ebc4f4bb7-GRU',
+424 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+424 silly registry.get     server: 'cloudflare' } ]
+425 silly lockFile 4651dd2e-firebase-firestore-0-5-4 firebase/firestore@0.5.4
+426 silly lockFile 4651dd2e-firebase-firestore-0-5-4 firebase/firestore@0.5.4
+427 silly lockFile ba25739d-firebase-app-0-3-3 firebase/app@0.3.3
+428 silly lockFile ba25739d-firebase-app-0-3-3 firebase/app@0.3.3
+429 error Error: Method Not Allowed
+429 error     at errorResponse (/usr/share/npm/lib/cache/add-named.js:260:10)
+429 error     at /usr/share/npm/lib/cache/add-named.js:120:12
+429 error     at saved (/usr/share/npm/node_modules/npm-registry-client/lib/get.js:167:7)
+429 error     at FSReqWrap.oncomplete (fs.js:82:15)
+430 error If you need help, you may report this *entire* log,
+430 error including the npm and node versions, at:
+430 error     <http://github.com/npm/npm/issues>
+431 error System Linux 4.14.34-v7+
+432 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "--save" "firebase"
+433 error cwd /home/pi/Documents/TCC/RxMonitor/broker-subscriber
+434 error node -v v4.8.2
+435 error npm -v 1.4.21
+436 error code E405
+437 verbose exit [ 1, true ]

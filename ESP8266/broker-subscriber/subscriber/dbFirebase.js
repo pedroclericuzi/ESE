@@ -7,7 +7,7 @@ firebase.initializeApp({
 });
 
 exports.enviarLocalizacao = function(lat, long){
-  firebase.database().ref('RPI/').set({
+  firebase.database().ref('Dispositivo/').set({
     Latitude : lat,
     Longitude : long
   });

@@ -5,20 +5,20 @@
 #include <PubSubClient.h> // Biblioteca que habilita a publicação da mensagem no Broker
 #include "EmonLib.h"
 #include <SoftwareSerial.h>
-#include <TinyGPS.h> // Biblioteca para pegar as informações do módulo GPS
+#include <TinyGPS.h>
 
 // Módulo GPS
-int pinRX = D1;  //Pino conectado no TX do módulo GPS
-int pinTX = D2;  //Pino conectado no RX do módulo GPS
-SoftwareSerial serial1(5,4); // RX, TX
+int pinRX = D2;  //Pino conectado no TX do módulo GPS
+int pinTX = D1;  //Pino conectado no RX do módulo GPS
+SoftwareSerial serial1(pinRX,pinTX); // RX, TX
 TinyGPS gps1;
 
 // WiFi
-const char* ssid = "Virus";//O SSID da sua rede
+const char* ssid = "Clericuzi";//O SSID da sua rede
 const char* wifi_password = "pedromat"; //sua senha
 
 // MQTT
-const char* mqtt_server = "192.168.10.107"; //Endereço de IP do Broker
+const char* mqtt_server = "192.168.0.110"; //Endereço de IP do Broker
 const char* mqtt_topic = "latlong";
 const char* mqtt_username = "pi";
 const char* mqtt_password = "raspberry";
@@ -31,9 +31,8 @@ WiFiClient wifiClient;
 PubSubClient client(mqtt_server, 3000, wifiClient); // 3001 é a porta que será liberada para a comunicação
 
 void setup() {
-  serial1.begin(115200);
+  serial1.begin(9600);
   Serial.begin(115200);
-  Serial.println("O GPS do Brincando com Ideias aguarda pelo sinal dos satelites...");
   Serial.print("Connecting to ");
   Serial.println(ssid);
 
@@ -64,9 +63,9 @@ void setup() {
 void loop() {
     bool recebido = false;
     while (serial1.available()) {
+       //Serial.println("O GPS está disponível");
        char cIn = serial1.read();
        recebido = gps1.encode(cIn);
-       //Serial.println(recebido);
     }
     
     if (recebido) {
@@ -102,18 +101,13 @@ void loop() {
        SerialData += String(float(longitude) / 1000000, 6);
        const char* localizacao = SerialData.c_str();
        mqtt_communicacao(localizacao);
-       //float distancia_entre;
-       //distancia_entre = gps1.distance_between(lat1, long1, lat2, long2);
-  
-       //float sentido_para;
-       //sentido_para = gps1.course_to(lat1, long1, lat2, long2);
     } else {
-        String SerialData="-7.9957985/-34.8424998";
+        /*String SerialData="-7.9957985/-34.8424998";
          //SerialData = String(potencia);
         const char* localizacao = SerialData.c_str();
-        mqtt_communicacao(localizacao);
+        mqtt_communicacao(localizacao);*/
     }
-    delay(1000);
+    //delay(1000);
 }
 
 void mqtt_communicacao(const char *localizacao){
